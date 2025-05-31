@@ -76,7 +76,7 @@
                  &kp LCTRL &kp LALT &kp LGUI &mo 1  &kp SPACE  &kp RET  &mo 2  &kp BSPC &kp RGUI  &kp RALT
             >;
 
-            sensor-bindings = <&inc_brightness>;
+            sensor-bindings = <&rgb_brightness>;
         };
 
         lower_layer {
