@@ -18,6 +18,16 @@
     // chain-length = <29>; // Uncomment if using only per-key LEDs.
 };
 
+&sensors {
+    left_config {
+        triggers-per-rotation = <18>;
+    };
+
+    right_config {
+        triggers-per-rotation = <24>;
+    };
+};
+
 / {
     behaviors {
         bspc_del: backspace_delete {
