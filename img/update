@@ -2,7 +2,7 @@
 
 set -e
 
-LAYERS="Base Lower Raise Adjust Fun"
+LAYERS="base symbols actions adjust"
 
 draw() {
 	keymap -c img/config.yaml parse -z config/"$1".keymap >./img/"$1".yaml
@@ -10,4 +10,3 @@ draw() {
 }
 
 draw splitkb_aurora_sofle "-k splitkb/aurora/sofle_v2/rev1"
-draw corne "-k chocofi"
