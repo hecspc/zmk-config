@@ -91,7 +91,7 @@
 
             bindings = <
 &kp ESC         &kp N1        &kp N2       &kp N3              &kp N4                   &kp N5                                           &kp N6     &kp N7            &kp N8             &kp N9       &kp N0          &kp MINUS
-&kp TAB         &kp Q         &kp W        &mt LEFT_BRACKET E  &mt RIGHT_BRACKET R      &kp T                                            &kp Y      &mt LEFT_BRACE U  &mt RIGHT_BRACE I  &kp O        &kp P           &kp BACKSLASH
+&kp EQUAL       &kp Q         &kp W        &mt LEFT_BRACKET E  &mt RIGHT_BRACKET R      &kp T                                            &kp Y      &mt LEFT_BRACE U  &mt RIGHT_BRACE I  &kp O        &kp P           &kp BACKSLASH
 &mo 1           &mt LSHIFT A  &mt LCTRL S  &mt LALT D          &mt LCMD F               &kp G                                            &kp H      &mt RCMD J        &mt RALT K         &mt RCTRL L  &mt RSHFT SEMI  &kp SQT
 &kp LEFT_ARROW  &mt LG(Z) Z   &mt LG(X) X  &mt LG(C) C         &mt LG(V) V              &kp B      &kp C_MUTE             &lock_screen   &kp N      &kp M             &kp COMMA          &kp DOT      &kp FSLH        &kp RIGHT_ARROW
                               &mo 3        &rgb_ug RGB_TOG     &mt LG(LS(C)) LG(SPACE)  &kp SPACE  &mt LC(A) BACKSPACE    &mt LC(A) TAB  &kp ENTER  &kp DOWN_ARROW    &kp UP_ARROW       &mo 2
