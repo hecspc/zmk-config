@@ -12,15 +12,27 @@
 
 #include "keys/60.h"
 
-#include "includes/rgb.dtsi"
-#include "includes/mods.dtsi"
-#include "includes/settings.dtsi"
+/* * Keymap for the Aurora Sofle keyboard.
+ *
+ * This keymap is designed to be used with the Aurora Sofle keyboard
+ * and includes various behaviors and configurations for the keys.
+ *
+ * It includes:
+ * - Layer-tap configurations
+ * - Homerow mods
+ * - RGB controls
+ * - Media controls
+ * - Bluetooth controls
+ */
 
-// triggers-per-rotation = <18>;
+
+// &sensors {
+//     left_config {
+//        triggers-per-rotation = <18>;
 //     };
 //
 //     right_config {
-//         triggers-per-rotation = <24>;
+//        triggers-per-rotation = <24>;
 //     };
 // };
 
