@@ -4,6 +4,8 @@
 
 ![Keymap](img/splitkb_aurora_sofle.svg)
 
+Created with [Keymap Drawer](https://keymap-drawer.streamlit.app/)
+
 ## Resources
 
 - [folke](https://github.com/folke/zmk-config)
