@@ -1,0 +1,26 @@
+/ {
+
+  behaviors {
+
+    rgb_brightness: rgb_brightness {
+        compatible = "zmk,behavior-sensor-rotate";
+        label = "RGB_BRIGHTNESS";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_BRD>, <&rgb_ug RGB_BRI>;
+    };
+
+    rgb_hue: rgb_hue {
+        compatible = "zmk,behavior-sensor-rotate";
+        label = "RGB_HUE";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+    };
+
+    rgb_saturation: rgb_saturation {
+        COMPATIBLE = "ZMK,BEHAVIOR-SENSOR-ROTATE";
+        LABEL = "RGB_SATURATION";
+        #SENSOR-BINDING-CELLS = <0>;
+        BINDINGS = <&RGB_UG RGB_SAD>, <&RGB_UG RGB_SAI>;
+    };
+  };
+};
