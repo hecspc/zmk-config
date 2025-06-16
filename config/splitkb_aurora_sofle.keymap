@@ -38,142 +38,74 @@
 / {
     behaviors {
       // Positional Homerow mods
-    // Homerow mods that prevent accidental activations when rolling keys,
-    // such as when typing `st` or `ne` on colemak-dh layouts or `as` on
-    // qwerty.
-    //
-    // Works by only allowing a mod to activate within tapping-term if
-    // it's on the opposite side of the keyboard or on the same side thumb
-    // keys.
+      // Homerow mods that prevent accidental activations when rolling keys,
+      // such as when typing `st` or `ne` on colemak-dh layouts or `as` on
+      // qwerty.
+      //
+      // Works by only allowing a mod to activate within tapping-term if
+      // it's on the opposite side of the keyboard or on the same side thumb
+      // keys.
 
-    // Further optimization using urob's timerless homerow mods method:
-    // https://github.com/urob/zmk-config#timeless-homerow-mods
-    hml: homerow_mods_left {
-      compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS_LEFT";
-      #binding-cells = <2>;
-      bindings = <&kp>, <&kp>;
+      // Further optimization using urob's timerless homerow mods method:
+      // https://github.com/urob/zmk-config#timeless-homerow-mods
+      hml: homerow_mods_left {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_LEFT";
+        #binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
 
-      flavor = "balanced";
-      tapping-term-ms = <280>;
-      quick-tap-ms = <175>;        // repeat on tap-into-hold
-      // global-quick-tap-ms = <150>;         // requires PR #1387
-      global-quick-tap;
-      hold-trigger-key-positions = <KEYS_R KEYS_T>;
-      hold-trigger-on-release;       // requires PR #1423
-    };
+        flavor = "balanced";
+        tapping-term-ms = <280>;
+        quick-tap-ms = <175>;        // repeat on tap-into-hold
+        // global-quick-tap-ms = <150>;         // requires PR #1387
+        global-quick-tap;
+        hold-trigger-key-positions = <KEYS_R KEYS_T>;
+        hold-trigger-on-release;       // requires PR #1423
+      };
 
-    hmr: homerow_mods_right {
-      compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS_RIGHT";
-      #binding-cells = <2>;
-      bindings = <&kp>, <&kp>;
+      hmr: homerow_mods_right {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_RIGHT";
+        #binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
 
-      flavor = "balanced";
-      tapping-term-ms = <280>;
-      // global-quick-tap-ms = <150>;         // requires PR #1387
-      quick_tap_ms = <175>;
-      global-quick-tap;
-      hold-trigger-key-positions = <KEYS_L KEYS_T>;
-      hold-trigger-on-release;       // requires PR #1423
-    };
+        flavor = "balanced";
+        tapping-term-ms = <280>;
+        // global-quick-tap-ms = <150>;         // requires PR #1387
+        quick_tap_ms = <175>;
+        global-quick-tap;
+        hold-trigger-key-positions = <KEYS_L KEYS_T>;
+        hold-trigger-on-release;       // requires PR #1423
+      };
 
+      /*
+      * Non-Positional Homerow Mods
+      * Used for &mm_grescm_gui behavior on left hand.
+      *
+      * Usage: &tm LSHFT T
+      * Tap: T
+      * Tap-Tap-Hold: Repeat T
+      * Hold: LSHIFT
+      */
+      tm: thumb_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "THUMB_MODS";
+        #binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
 
-    /*
-     * Non-Positional Homerow Mods
-     * Used for &mm_grescm_gui behavior on left hand.
-     *
-     * Usage: &hm LSHFT T
-     * Tap: T
-     * Tap-Tap-Hold: Repeat T
-     * Hold: LSHIFT
-     */
-    tm: thumb_mods {
-      compatible = "zmk,behavior-hold-tap";
-      label = "THUMB_MODS";
-      #binding-cells = <2>;
-      bindings = <&kp>, <&kp>;
+        flavor = "balanced";
+        tapping-term-ms = <280>;
+        quick_tap_ms = <175>;
+        global-quick-tap;
+        retro-tap; // use tap when key is used without another key
+      };
 
-      flavor = "balanced";
-      tapping-term-ms = <200>;
-      quick_tap_ms = <175>;
-      retro-tap; // use tap when key is used without another key
-    };
-
-    lock_screen: lock_screen {
-      compatible = "zmk,behavior-tap-dance";
-      label = "LOCK_SCREEN";
-      #binding-cells = <0>;
-      bindings = <&kp LC(LG(Q))>, <&kp LG(LC(LS(Q)))>;
-    };// Positional Homerow mods
-    // Homerow mods that prevent accidental activations when rolling keys,
-    // such as when typing `st` or `ne` on colemak-dh layouts or `as` on
-    // qwerty.
-    //
-    // Works by only allowing a mod to activate within tapping-term if
-    // it's on the opposite side of the keyboard or on the same side thumb
-    // keys.
-
-    // Further optimization using urob's timerless homerow mods method:
-    // https://github.com/urob/zmk-config#timeless-homerow-mods
-    hml: homerow_mods_left {
-      compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS_LEFT";
-      #binding-cells = <2>;
-      bindings = <&kp>, <&kp>;
-
-      flavor = "balanced";
-      tapping-term-ms = <280>;
-      quick-tap-ms = <175>;        // repeat on tap-into-hold
-      // global-quick-tap-ms = <150>;         // requires PR #1387
-      global-quick-tap;
-      hold-trigger-key-positions = <KEYS_R KEYS_T>;
-      hold-trigger-on-release;       // requires PR #1423
-    };
-
-    hmr: homerow_mods_right {
-      compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS_RIGHT";
-      #binding-cells = <2>;
-      bindings = <&kp>, <&kp>;
-
-      flavor = "balanced";
-      tapping-term-ms = <280>;
-      // global-quick-tap-ms = <150>;         // requires PR #1387
-      quick_tap_ms = <175>;
-      global-quick-tap;
-      hold-trigger-key-positions = <KEYS_L KEYS_T>;
-      hold-trigger-on-release;       // requires PR #1423
-    };
-
-
-    /*
-     * Non-Positional Homerow Mods
-     * Used for &mm_grescm_gui behavior on left hand.
-     *
-     * Usage: &hm LSHFT T
-     * Tap: T
-     * Tap-Tap-Hold: Repeat T
-     * Hold: LSHIFT
-     */
-    tm: thumb_mods {
-      compatible = "zmk,behavior-hold-tap";
-      label = "THUMB_MODS";
-      #binding-cells = <2>;
-      bindings = <&kp>, <&kp>;
-
-      flavor = "balanced";
-      tapping-term-ms = <200>;
-      quick_tap_ms = <175>;
-      retro-tap; // use tap when key is used without another key
-    };
-
-    lock_screen: lock_screen {
-      compatible = "zmk,behavior-tap-dance";
-      label = "LOCK_SCREEN";
-      #binding-cells = <0>;
-      bindings = <&kp LC(LG(Q))>, <&kp LG(LC(LS(Q)))>;
-    };
+      lock_screen: lock_screen {
+        compatible = "zmk,behavior-tap-dance";
+        label = "LOCK_SCREEN";
+        #binding-cells = <0>;
+        bindings = <&kp LC(LG(Q))>, <&kp LG(LC(LS(Q)))>;
+      };
 
       rgb_brightness: rgb_brightness {
           compatible = "zmk,behavior-sensor-rotate";
@@ -213,7 +145,7 @@
 &kp EQUAL       &kp Q         &kp W        &mt LEFT_BRACKET E  &mt RIGHT_BRACKET R      &kp T                                            &kp Y      &mt LEFT_BRACE U  &mt RIGHT_BRACE I  &kp O        &kp P           &kp BACKSLASH
 &mo 1           &hml LSHIFT A  &hml LCTRL S  &hml LALT D       &hml LCMD F           &kp G                                            &kp H      &hmr RCMD J        &hmr RALT K         &hmr RCTRL L  &hmr RSHFT SEMI  &kp SQT
 &kp LEFT_ARROW  &hml LG(Z) Z   &hml LG(X) X  &hml LG(C) C         &hml LG(V) V              &kp B      &kp C_MUTE             &lock_screen   &kp N      &kp M             &kp COMMA          &kp DOT      &kp FSLH        &kp RIGHT_ARROW
-                              &mo 3        &rgb_ug RGB_TOG     &tm LG(LS(C)) LG(SPACE)  &kp SPACE  &tm LC(A) BACKSPACE    &tm LC(A) TAB  &kp ENTER  &kp DOWN_ARROW    &kp UP_ARROW       &mo 2
+                              &mo 3        &rgb_ug RGB_TOG     &hml LG(LS(C)) LG(SPACE)  &kp SPACE  &hml LC(A) BACKSPACE    &hmr LC(A) TAB  &kp ENTER  &kp DOWN_ARROW    &kp UP_ARROW       &mo 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
