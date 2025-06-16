@@ -1,4 +1,3 @@
-#include <dt-bindings/zmk/rgb.h>
 
 / {
 
@@ -19,10 +18,10 @@
     };
 
     rgb_saturation: rgb_saturation {
-        COMPATIBLE = "ZMK,BEHAVIOR-SENSOR-ROTATE";
-        LABEL = "RGB_SATURATION";
-        #SENSOR-BINDING-CELLS = <0>;
-        BINDINGS = <&RGB_UG RGB_SAD>, <&RGB_UG RGB_SAI>;
+        compatible = "zmk,behavior-sensor-rotate";
+        label = "RGB_SATURATION";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_SAD>, <&rgb_ug RGB_SAI>;
     };
   };
 };
