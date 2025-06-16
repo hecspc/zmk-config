@@ -1,3 +1,5 @@
+#include <dt-bindings/zmk/rgb.h>
+
 / {
 
   behaviors {
