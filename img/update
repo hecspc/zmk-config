@@ -2,7 +2,7 @@
 
 set -e
 
-LAYERS="base symbols actions adjust"
+LAYERS="Base Symbols Actions Adjust"
 
 draw() {
 	keymap -c img/config.yaml parse -z config/"$1".keymap >./img/"$1".yaml
