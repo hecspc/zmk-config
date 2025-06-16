@@ -11,6 +11,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #include "keys/60.h"
+#include "keys/base.h"
 
 /* * Keymap for the Aurora Sofle keyboard.
  *
