@@ -190,6 +190,13 @@
             bindings = <&kp LC(A) &kp Z>;
             label = "TMUX_FOCUS";
         };
+
+        tmux_new_tab: tmux_new_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp C>;
+            label = "TMUX_NEW_TAB";
+        };
     };
 
     keymap {
@@ -262,13 +269,25 @@
         tmux {
             bindings = <
 &none  &none  &none  &none          &none        &none                  &none               &none                 &none                   &none           &none  &none
-&none  &none  &none  &none          &none        &none                  &none               &tmux_split_vertical  &tmux_split_horizontal  &none           &none  &none
+&none  &none  &none  &none          &none        &none                  &none               &tmux_split_vertical  &tmux_split_horizontal  &tmux_new_tab   &none  &none
 &none  &none  &none  &kp LC(SPACE)  &tmux_focus  &none                  &tmux_previous_tab  &tmux_jump            &tmux_sessions          &tmux_next_tab  &none  &none
 &none  &none  &none  &none          &none        &none  &none    &none  &none               &none                 &none                   &none           &none  &none
               &none  &none          &none        &none  &none    &none  &none               &none                 &none                   &none
             >;
 
             label = "TMUX";
+        };
+
+        fun {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "FUN";
         };
     };
 };
