@@ -14,7 +14,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 140    // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
 
@@ -46,6 +46,12 @@
     flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <175>;
+};
+
+&msc {
+  acceleration-exponent = <1>;      // 0
+  time-to-max-speed-ms = <40>;      // 500
+  delay-ms = <0>;                   // 10
 };
 
 / {
@@ -146,9 +152,10 @@
         };
         
         mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
+            compatible = "zmk,behavior-sensor-rotate-var";
             label = "MOUSE_SCROLL";
             #sensor-binding-cells = <0>;
+            tap-ms = <20>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
     
