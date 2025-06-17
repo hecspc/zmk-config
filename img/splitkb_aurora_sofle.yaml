@@ -133,8 +133,8 @@ layers:
   - EP OFF
   - EP ON
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - 🔄
+  - 💾
   - {t: ' ', type: trans}
   - INS
   - 🖨️
