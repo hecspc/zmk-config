@@ -133,8 +133,8 @@ layers:
   - EP OFF
   - EP ON
   - {t: ' ', type: trans}
-  - 🔄
-  - 💾
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - INS
   - 🖨️
@@ -159,7 +159,7 @@ layers:
   - →
   - ⌦
   - ⌫
-  - {t: ' ', type: trans}
+  - 💾
   - ↩️
   - CUT
   - COPY
@@ -172,7 +172,7 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - 💾
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
