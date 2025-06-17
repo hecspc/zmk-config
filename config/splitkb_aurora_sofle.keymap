@@ -14,7 +14,14 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 140    // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
+
+#define ZMK_MOUSE_SCRL_VAL_ENCODER 140    // default: 10
+
+#define SCRL_UP_ENCODER MOVE_Y(ZMK_MOUSE_SCRL_VAL_ENCODER)
+#define SCRL_DOWN_ENCODER MOVE_Y(-ZMK_MOUSE_SCRL_VAL_ENCODER)
+#define SCRL_LEFT_ENCODER MOVE_X(-ZMK_MOUSE_SCRL_VAL_ENCODER)
+#define SCRL_RIGHT_ENCODER MOVE_X(ZMK_MOUSE_SCRL_VAL_ENCODER)
 
 #include <dt-bindings/zmk/pointing.h>
 
@@ -154,9 +161,9 @@
         mouse_scroll: mouse_scroll {
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "MOUSE_SCROLL";
-            #sensor-binding-cells = <0>;
+            #sensor-binding-cells = <2>;
             tap-ms = <20>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc>, <&msc>;
         };
     
     };
@@ -240,7 +247,7 @@
                                &kp LS(LC(LA(E)))  &rgb_ug RGB_TOG      &hml LG(LS(C)) LG(SPACE)  &kp BACKSPACE  &lt 2 SPACE    &lt 1 ENTER   &kp TAB  &kp UP_ARROW       &kp DOWN_ARROW      &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll SCRL_UP_ENCODER SCRL_DOWN_ENCODER>;
         };
 
         symbols {
