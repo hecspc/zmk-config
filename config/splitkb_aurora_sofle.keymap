@@ -262,8 +262,8 @@
         tmux {
             bindings = <
 &none  &none  &none  &none          &none        &none                  &none       &none                 &none                   &none           &none  &none
-&none  &none  &none  &none          &none        &none                  &none       &tmux_previous_tab    &tmux_next_tab          &none           &none  &none
-&none  &none  &none  &kp LC(SPACE)  &tmux_focus  &none                  &tmux_jump  &tmux_split_vertical  &tmux_split_horizontal  &tmux_sessions  &none  &none
+&none  &none  &none  &none          &none        &none                  &none       &tmux_split_vertical  &tmux_split_horizontal  &none           &none  &none
+&none  &none  &none  &kp LC(SPACE)  &tmux_focus  &none                  &tmux_jump  &tmux_previous_tab    &tmux_sessions          &tmux_next_tab  &none  &none
 &none  &none  &none  &none          &none        &none  &none    &none  &none       &none                 &none                   &none           &none  &none
               &none  &none          &none        &none  &none    &none  &none       &none                 &none                   &none
             >;
