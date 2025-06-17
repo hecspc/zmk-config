@@ -141,6 +141,57 @@
         };
     };
 
+    macros {
+        tmux_split_vertical: tmux_split_vertical {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp PIPE>;
+            label = "TMUX_SPLIT_VERTICAL";
+        };
+
+        tmux_split_horizontal: tmux_split_horizontal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp MINUS>;
+            label = "TMUX_SPLIT_HORIZONTAL";
+        };
+
+        tmux_previous_tab: tmux_previous_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp P>;
+            label = "TMUX_PREVIOUS_TAB";
+        };
+
+        tmux_next_tab: tmux_next_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp N>;
+            label = "TMUX_NEXT_TAB";
+        };
+
+        tmux_sessions: tmux_sessions {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp S>;
+            label = "TMUX_SESSIONS";
+        };
+
+        tmux_jump: tmux_jump {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp J>;
+            label = "TMUX_JUMP";
+        };
+
+        tmux_focus: tmux_focus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp Z>;
+            label = "TMUX_FOCUS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -210,11 +261,11 @@
 
         tmux {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
             >;
 
             label = "TMUX";
