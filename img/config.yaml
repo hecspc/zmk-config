@@ -157,6 +157,9 @@ parse_config:
     '&bt BT_NXT': 🛜🔼
     '&bt BT_PRV': 🛜🔽
     '&bt BT_CLR': 🛜❌
+    '&lock_screen': 🔒
+    'OUT_USB': "USB"
+    'OUT_BLE': "BLE"
   sticky_label: sticky
   trans_legend:
     t: " "
@@ -165,12 +168,21 @@ parse_config:
   zmk_keycode_map:
     'LC(INS)': "📄"
     'LS(INS)': "📋"
+    'INS': "📋"
     'LS(DEL)': "✂️"
     'LG(Q)': "⌘Q"
     'LC(W)': "⌃W"
     'LC(T)': "⌃T"
     'LC(TAB)': "⌃⇥"
     'LS(LC(TAB))': "⇧⌃⇥"
+    'LG(Z)': "UNDO"
+    'LG(C)': "COPY"
+    'LG(X)': "CUT"
+    'LG(V)': "PASTE"
+    'LG(SPACE)': "RAYCAST"
+    'LG(LS(C))': "CLIPBOARD"
+    'LS(LC(LA(E)))': 🌐
+    'LC(A)': 🖥️
     MEH: MEH
     'LC(LS(LALT))': "MEH"
     K_UNDO: "↩️"
@@ -254,14 +266,19 @@ parse_config:
     END: "⇲"
     PG_DN: "⇟"
     LEFT: "←"
+    LEFT_ARROW: "←"
     RIGHT: "→"
+    RIGHT_ARROW: "→"
     KP_MULTIPLY: "*"
     UP: "↑"
     DOWN: "↓"
+    UP_ARROW: "↑"
+    DOWN_ARROW: "↓"
     KP_PLUS: "+"
     LCTRL: ⌃
     LALT: ⌥
     LGUI: ⌘
+    LCMD: ⌘
     LSHFT: ⇧
     RCTRL: ⌃
     LEFT_CONTROL: ⌃
@@ -271,14 +288,17 @@ parse_config:
     RALT: ⌥
     RGUI: ⌘
     RSHFT: ⇧
+    RCMD: ⌘
     RIGHT_CONTROL: ⌃
     RIGHT_ALT: ⌥
     RIGHT_GUI: ⌘
     RIGHT_SHFT: ⇧
     TAB: ⇥
     RET: '⏎'
+    ENTER: '⏎'
     ESC: '⎋'
     BSPC: ⌫
+    BACKSPACE: ⌫
     DEL: ⌦
     SPACE: ⎵
     PSCRN: 🖨️
