@@ -164,10 +164,10 @@ layers:
   - CUT
   - COPY
   - PASTE
-  - RGB SAD
+  - RGB HUD
   - RGB TOG
   - RGB EFF
-  - RGB SAI
+  - RGB HUI
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -176,10 +176,10 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - RGB SPD
   - {type: held}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - RGB SPI
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
