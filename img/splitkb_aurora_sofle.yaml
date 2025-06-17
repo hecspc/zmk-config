@@ -51,7 +51,7 @@ layers:
   - .
   - /
   - RIGHT ARROW
-  - ''
+  - Meh+E
   - RGB TOG
   - {t: Gui+⎵, h: Gui+Sft+C}
   - BACKSPACE
