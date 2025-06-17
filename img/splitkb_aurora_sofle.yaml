@@ -58,8 +58,8 @@ layers:
   - {t: ⎵, h: ACTIONS}
   - {t: ENTER, h: SYMBOLS}
   - ⇥
-  - DOWN ARROW
   - UP ARROW
+  - DOWN ARROW
   - ''
   SYMBOLS:
   - F1
