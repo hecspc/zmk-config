@@ -1108,12 +1108,12 @@ path.combo {
 <g transform="translate(644, 91)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 64%">&amp;tmux_prev…</tspan></text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 64%">&amp;tmux_spli…</tspan></text>
 </g>
 <g transform="translate(700, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 64%">&amp;tmux_next…</tspan></text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 64%">&amp;tmux_spli…</tspan></text>
 </g>
 <g transform="translate(756, 91)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1161,17 +1161,17 @@ path.combo {
 <g transform="translate(644, 147)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 64%">&amp;tmux_spli…</tspan></text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 64%">&amp;tmux_prev…</tspan></text>
 </g>
 <g transform="translate(700, 140)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 64%">&amp;tmux_spli…</tspan></text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 64%">&amp;tmux_sess…</tspan></text>
 </g>
 <g transform="translate(756, 147)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 64%">&amp;tmux_sess…</tspan></text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 64%">&amp;tmux_next…</tspan></text>
 </g>
 <g transform="translate(812, 175)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
