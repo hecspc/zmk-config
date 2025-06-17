@@ -261,6 +261,8 @@ parse_config:
     K_CMENU: 🌍
     K_MENU: 🌍
     EP_TOG: "🔌"
+    OUT_USB: "USB"
+    OUT_BLE: "BLE"
     PG_UP: "⇞"
     HOME: "⇱"
     END: "⇲"
@@ -285,9 +287,11 @@ parse_config:
     LEFT_ALT: ⌥
     LEFT_GUI: ⌘
     LEFT_SHFT: ⇧
+    LSHIFT: ⇧
     RALT: ⌥
     RGUI: ⌘
     RSHFT: ⇧
+    RSHIFT: ⇧
     RCMD: ⌘
     RIGHT_CONTROL: ⌃
     RIGHT_ALT: ⌥
