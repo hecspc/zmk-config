@@ -25,41 +25,41 @@ layers:
   - O
   - P
   - \
-  - {t: Ctl+A, h: TMUX}
+  - {t: 🖥️, h: TMUX}
   - {t: A, h: LSHIFT}
   - {t: S, h: ⌃}
   - {t: D, h: ⌥}
-  - {t: F, h: LCMD}
+  - {t: F, h: ⌘}
   - G
   - H
-  - {t: J, h: RCMD}
+  - {t: J, h: ⌘}
   - {t: K, h: ⌥}
   - {t: L, h: ⌃}
   - {t: ;, h: ⇧}
   - ''''
-  - LEFT ARROW
-  - {t: Z, h: Gui+Z}
-  - {t: X, h: Gui+X}
-  - {t: C, h: Gui+C}
-  - {t: V, h: Gui+V}
+  - ←
+  - {t: Z, h: UNDO}
+  - {t: X, h: CUT}
+  - {t: C, h: COPY}
+  - {t: V, h: PASTE}
   - B
   - 🔇
-  - '&lock_screen'
+  - 🔒
   - N
   - M
   - ','
   - .
   - /
-  - RIGHT ARROW
-  - Meh+E
+  - →
+  - 🌐
   - RGB TOG
-  - {t: Gui+⎵, h: Gui+Sft+C}
-  - BACKSPACE
+  - {t: RAYCAST, h: CLIPBOARD}
+  - ⌫
   - {t: ⎵, h: ACTIONS}
-  - {t: ENTER, h: SYMBOLS}
+  - {t: ⏎, h: SYMBOLS}
   - ⇥
-  - UP ARROW
-  - DOWN ARROW
+  - ↑
+  - ↓
   - ''
   SYMBOLS:
   - F1
@@ -136,7 +136,7 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - INS
+  - 📋
   - 🖨️
   - 🌍
   - OUT USB
@@ -151,7 +151,7 @@ layers:
   - ⌥
   - ⌃
   - ⇧
-  - LCMD
+  - ⌘
   - CLCK
   - ⇟
   - ←
