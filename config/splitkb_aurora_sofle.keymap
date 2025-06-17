@@ -102,14 +102,14 @@
         };
 
         /*
-      * Non-Positional Homerow Mods
-      * Used for &mm_grescm_gui behavior on left hand.
-      *
-      * Usage: &tm LSHFT T
-      * Tap: T
-      * Tap-Tap-Hold: Repeat T
-      * Hold: LSHIFT
-      */
+         * Non-Positional Homerow Mods
+         * Used for &mm_grescm_gui behavior on left hand.
+         *
+         * Usage: &tm LSHFT T
+         * Tap: T
+         * Tap-Tap-Hold: Repeat T
+         * Hold: LSHIFT
+         */
 
         tm: thumb_mods {
             compatible = "zmk,behavior-hold-tap";
