@@ -214,8 +214,8 @@ layers:
   - Ctl+⎵
   - '&tmux_focus'
   - ''
-  - '&tmux_jump'
   - '&tmux_previous_tab'
+  - '&tmux_jump'
   - '&tmux_sessions'
   - '&tmux_next_tab'
   - ''
