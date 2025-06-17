@@ -13,6 +13,11 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
+
+#include <dt-bindings/zmk/pointing.h>
+
 /* * Keymap for the Aurora Sofle keyboard.
  *
  * This keymap is designed to be used with the Aurora Sofle keyboard
@@ -139,6 +144,14 @@
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_SAD>, <&rgb_ug RGB_SAI>;
         };
+        
+        mouse_scroll: mouse_scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSE_SCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
+    
     };
 
     macros {
@@ -220,7 +233,7 @@
                                &kp LS(LC(LA(E)))  &rgb_ug RGB_TOG      &hml LG(LS(C)) LG(SPACE)  &kp BACKSPACE  &lt 2 SPACE    &lt 1 ENTER   &kp TAB  &kp UP_ARROW       &kp DOWN_ARROW      &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
         };
 
         symbols {
