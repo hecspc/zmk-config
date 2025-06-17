@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: splitkb_aurora_sofle}
 layers:
   BASE:
-  - ⎋
+  - ESC
   - '1'
   - '2'
   - '3'
@@ -27,15 +27,15 @@ layers:
   - \
   - {t: Ctl+A, h: TMUX}
   - {t: A, h: LSHIFT}
-  - {t: S, h: ⌃}
-  - {t: D, h: ⌥}
+  - {t: S, h: LCTRL}
+  - {t: D, h: LALT}
   - {t: F, h: LCMD}
   - G
   - H
   - {t: J, h: RCMD}
-  - {t: K, h: ⌥}
-  - {t: L, h: ⌃}
-  - {t: ;, h: ⇧}
+  - {t: K, h: RALT}
+  - {t: L, h: RCTRL}
+  - {t: ;, h: RSHFT}
   - ''''
   - LEFT ARROW
   - {t: Z, h: Gui+Z}
@@ -43,7 +43,7 @@ layers:
   - {t: C, h: Gui+C}
   - {t: V, h: Gui+V}
   - B
-  - 🔇
+  - MUTE
   - '&lock_screen'
   - N
   - M
@@ -53,11 +53,11 @@ layers:
   - RIGHT ARROW
   - Meh+E
   - RGB TOG
-  - {t: Gui+⎵, h: Gui+Sft+C}
+  - {t: Gui+SPACE, h: Gui+Sft+C}
   - BACKSPACE
-  - {t: ⎵, h: ACTIONS}
+  - {t: SPACE, h: ACTIONS}
   - {t: ENTER, h: SYMBOLS}
-  - ⇥
+  - TAB
   - DOWN ARROW
   - UP ARROW
   - ''
@@ -86,7 +86,7 @@ layers:
   - '9'
   - '0'
   - ''
-  - {t: ' ', type: trans}
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -94,73 +94,73 @@ layers:
   - '%'
   - ^
   - '&'
-  - '*'
+  - KP MULTIPLY
   - (
   - )
   - '|'
-  - {t: ' ', type: trans}
+  - {t: ▽, type: trans}
   - '='
   - '-'
-  - +
+  - KP PLUS
   - '{'
   - '}'
   - RGB TOG
-  - {t: ' ', type: trans}
+  - {t: ▽, type: trans}
   - '['
   - ']'
   - ;
   - ':'
   - \
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   ACTIONS:
-  - 🛜❌
-  - 🛜1
-  - 🛜2
-  - 🛜3
-  - 🛜4
-  - 🛜5
-  - 🔌
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - EP TOG
   - EP OFF
   - EP ON
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - INS
-  - 🖨️
-  - 🌍
+  - PSCRN
+  - CMENU
   - OUT USB
   - OUT BLE
-  - ⇞
-  - ⇱
-  - ↑
-  - ⇲
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - ⌥
-  - ⌃
-  - ⇧
+  - PG UP
+  - HOME
+  - UP
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LALT
+  - LCTRL
+  - LSHFT
   - LCMD
   - CLCK
-  - ⇟
-  - ←
-  - ↓
-  - →
-  - ⌦
-  - ⌫
-  - {t: ' ', type: trans}
-  - ↩️
+  - PG DN
+  - LEFT
+  - DOWN
+  - RIGHT
+  - DEL
+  - BSPC
+  - {t: ▽, type: trans}
+  - UNDO
   - CUT
   - COPY
   - PASTE
@@ -168,21 +168,21 @@ layers:
   - RGB TOG
   - RGB EFF
   - RGB HUI
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - RGB SPD
   - {type: held}
-  - {t: ' ', type: trans}
+  - {t: ▽, type: trans}
   - RGB SPI
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   TMUX:
   - ''
   - ''
@@ -211,7 +211,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - Ctl+⎵
+  - Ctl+SPACE
   - '&tmux_focus'
   - ''
   - '&tmux_previous_tab'
