@@ -16,13 +16,6 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
 
-#define ZMK_MOUSE_SCRL_VAL_ENCODER 140    // default: 10
-
-#define SCRL_UP_ENCODER MOVE_Y(ZMK_MOUSE_SCRL_VAL_ENCODER)
-#define SCRL_DOWN_ENCODER MOVE_Y(-ZMK_MOUSE_SCRL_VAL_ENCODER)
-#define SCRL_LEFT_ENCODER MOVE_X(-ZMK_MOUSE_SCRL_VAL_ENCODER)
-#define SCRL_RIGHT_ENCODER MOVE_X(ZMK_MOUSE_SCRL_VAL_ENCODER)
-
 #include <dt-bindings/zmk/pointing.h>
 
 /* * Keymap for the Aurora Sofle keyboard.
@@ -37,15 +30,15 @@
  * - Media controls
  * - Bluetooth controls
  */
-// &sensors {
-//     left_config {
-//        triggers-per-rotation = <18>;
-//     };
-//
-//     right_config {
-//        triggers-per-rotation = <24>;
-//     };
-// };
+&sensors {
+    left_config {
+       triggers-per-rotation = <30>;
+    };
+
+    right_config {
+       triggers-per-rotation = <30>;
+    };
+};
 
 &mt { tapping-term-ms = <240>; };
 
@@ -62,6 +55,7 @@
 };
 
 / {
+
     behaviors {
         // Positional Homerow mods
         // Homerow mods that prevent accidental activations when rolling keys,
@@ -159,11 +153,11 @@
         };
         
         mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate-var";
+            compatible = "zmk,behavior-sensor-rotate";
             label = "MOUSE_SCROLL";
-            #sensor-binding-cells = <2>;
-            tap-ms = <20>;
-            bindings = <&msc>, <&msc>;
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <30>;
         };
     
     };
@@ -247,7 +241,7 @@
                                &kp LS(LC(LA(E)))  &rgb_ug RGB_TOG      &hml LG(LS(C)) LG(SPACE)  &kp BACKSPACE  &lt 2 SPACE    &lt 1 ENTER   &kp TAB  &kp UP_ARROW       &kp DOWN_ARROW      &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll SCRL_UP_ENCODER SCRL_DOWN_ENCODER>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
         };
 
         symbols {
