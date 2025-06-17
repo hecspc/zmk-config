@@ -26,7 +26,7 @@ layers:
   - P
   - \
   - {t: 🖥️, h: TMUX}
-  - {t: A, h: LSHIFT}
+  - {t: A, h: ⇧}
   - {t: S, h: ⌃}
   - {t: D, h: ⌥}
   - {t: F, h: ⌘}
