@@ -30,16 +30,6 @@
  * - Media controls
  * - Bluetooth controls
  */
-&sensors {
-    left_config {
-       triggers-per-rotation = <30>;
-    };
-
-    right_config {
-       triggers-per-rotation = <30>;
-    };
-};
-
 &mt { tapping-term-ms = <240>; };
 
 &lt {
@@ -55,6 +45,12 @@
 };
 
 / {
+
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <30>;
+    };
 
     behaviors {
         // Positional Homerow mods
@@ -77,9 +73,8 @@
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;        // repeat on tap-into-hold
-            // global-quick-tap-ms = <150>;         // requires PR #1387
+            global-quick-tap-ms = <150>; 
 
-            global-quick-tap;
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;       // requires PR #1423
         };
@@ -92,11 +87,9 @@
 
             flavor = "balanced";
             tapping-term-ms = <280>;
+            global-quick-tap-ms = <150>; 
+            quick-tap-ms = <175>;
 
-            // global-quick-tap-ms = <150>;         // requires PR #1387
-
-            quick_tap_ms = <175>;
-            global-quick-tap;
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;       // requires PR #1423
         };
@@ -119,8 +112,8 @@
 
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick_tap_ms = <175>;
-            global-quick-tap;
+            quick-tap-ms = <175>;
+            global-quick-tap-ms = <150>;
             retro-tap; // use tap when key is used without another key
         };
 
@@ -152,14 +145,14 @@
             bindings = <&rgb_ug RGB_SAD>, <&rgb_ug RGB_SAI>;
         };
         
-        mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "MOUSE_SCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <30>;
-        };
-    
+    //     mouse_scroll: mouse_scroll {
+    //         compatible = "zmk,behavior-sensor-rotate";
+    //         label = "MOUSE_SCROLL";
+    //         #sensor-binding-cells = <0>;
+    //         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+    //         tap-ms = <30>;
+    //     };
+     
     };
 
     macros {
@@ -241,7 +234,7 @@
                                &kp LS(LC(LA(E)))  &rgb_ug RGB_TOG      &hml LG(LS(C)) LG(SPACE)  &kp BACKSPACE  &lt 2 SPACE    &lt 1 ENTER   &kp TAB  &kp UP_ARROW       &kp DOWN_ARROW      &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         symbols {
