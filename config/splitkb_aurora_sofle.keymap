@@ -234,7 +234,7 @@
 &kp EQUAL       &kp Q          &kp W              &hml LEFT_BRACKET E  &hml RIGHT_BRACKET R      &kp T                                       &kp Y    &hmr LEFT_BRACE U  &hmr RIGHT_BRACE I  &kp O         &kp P            &kp BACKSLASH
 &lt 3 LC(A)     &hml LSHIFT A  &hml LCTRL S       &hml LALT D          &hml LCMD F               &kp G                                       &kp H    &hmr RCMD J        &hmr RALT K         &hmr RCTRL L  &hmr RSHFT SEMI  &kp SQT
 &kp LEFT_ARROW  &hml LG(Z) Z   &hml LG(X) X       &hml LG(C) C         &hml LG(V) V              &kp B          &kp C_MUTE     &lock_screen  &kp N    &kp M              &kp COMMA           &kp DOT       &kp FSLH         &kp RIGHT_ARROW
-                               &kp LS(LC(LA(E)))  &rgb_ug RGB_TOG      &hml LG(LS(C)) LG(SPACE)  &kp BACKSPACE  &lt 2 SPACE    &lt 1 ENTER   &kp TAB  &kp UP_ARROW       &kp DOWN_ARROW      &to 5
+                               &kp LS(LC(LA(E)))  &rgb_ug RGB_TOG      &hml LG(LS(C)) LG(SPACE)  &kp BACKSPACE  &lt 2 SPACE    &lt 1 ENTER   &kp TAB  &kp UP_ARROW       &kp DOWN_ARROW      &tog 5
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
