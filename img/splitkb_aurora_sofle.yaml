@@ -364,5 +364,5 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: BASE, h: toggle}
   - Sft+Gui+V
+  - {t: BASE, h: toggle}
