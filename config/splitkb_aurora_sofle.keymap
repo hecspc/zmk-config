@@ -309,15 +309,17 @@
 
         zoom {
             bindings = <
-&trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans  &trans         &trans  &trans
-&trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans  &trans         &trans  &trans
-&trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans  &trans         &trans  &trans
-&trans  &trans  &trans         &trans         &trans  &trans  &kp K_MUTE    &kp LS(LG(A))  &trans  &trans  &trans  &trans         &trans  &trans
-                &kp LS(LG(S))  &kp LS(LG(R))  &trans  &trans  &trans        &trans         &trans  &trans  &to 0   &kp LS(LG(V))
+&trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans         &trans  &trans  &trans
+&trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans         &trans  &trans  &trans
+&trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans         &trans  &trans  &trans
+&trans  &trans  &trans         &trans         &trans  &trans  &kp K_MUTE    &kp LS(LG(A))  &trans  &trans  &trans         &trans  &trans  &trans
+                &kp LS(LG(S))  &kp LS(LG(R))  &trans  &trans  &trans        &trans         &trans  &trans  &kp LS(LG(V))  &to 0
             >;
 
             label = "ZOOM";
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_DN PG_UP>;
         };
     };
 };
