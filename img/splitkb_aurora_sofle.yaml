@@ -60,7 +60,7 @@ layers:
   - ⇥
   - ↑
   - ↓
-  - ''
+  - {t: ZOOM, h: toggle}
   SYMBOLS:
   - F1
   - F2
@@ -120,7 +120,7 @@ layers:
   - {type: held}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ZOOM, h: toggle}
+  - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   ACTIONS:
   - 🛜❌
@@ -182,7 +182,7 @@ layers:
   - RGB SPI
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - {t: ZOOM, h: toggle}
   TMUX:
   - ''
   - ''

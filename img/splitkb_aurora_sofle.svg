@@ -426,6 +426,9 @@ path.combo {
 <g transform="translate(756, 259)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<a href="#ZOOM">
+<text x="0" y="-4" class="key tap layer-activator">ZOOM</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 </g>
 </g>
@@ -711,12 +714,9 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 </g>
-<g transform="translate(700, 252)" class="key keypos-58">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#ZOOM">
-<text x="0" y="-4" class="key tap layer-activator">ZOOM</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<g transform="translate(700, 252)" class="key trans keypos-58">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 </g>
 <g transform="translate(756, 259)" class="key trans keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1024,9 +1024,12 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 </g>
-<g transform="translate(756, 259)" class="key trans keypos-59">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
+<g transform="translate(756, 259)" class="key keypos-59">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<a href="#ZOOM">
+<text x="0" y="-4" class="key tap layer-activator">ZOOM</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 </g>
 </g>
