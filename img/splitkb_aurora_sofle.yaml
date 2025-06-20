@@ -52,7 +52,7 @@ layers:
   - /
   - →
   - 🌐
-  - RGB TOG
+  - Gui+Alt+I
   - {t: RAYCAST, h: CLIPBOARD}
   - ⌫
   - {t: ⎵, h: ACTIONS}
