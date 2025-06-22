@@ -54,7 +54,7 @@ layers:
   - 🌐
   - Gui+Alt+I
   - {t: RAYCAST, h: CLIPBOARD}
-  - {t: ⇥, h: FUN}
+  - ⌫
   - {t: ⎵, h: ACTIONS}
   - {t: ⏎, h: SYMBOLS}
   - ⇥
@@ -298,9 +298,9 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   - {type: held}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - {type: held}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
