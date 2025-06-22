@@ -130,8 +130,8 @@ layers:
   - 🛜4
   - 🛜5
   - 🔌
-  - EP OFF
-  - EP ON
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -148,9 +148,9 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - ⌥
-  - ⌃
   - ⇧
+  - ⌃
+  - ⌥
   - ⌘
   - CLCK
   - ⇟
