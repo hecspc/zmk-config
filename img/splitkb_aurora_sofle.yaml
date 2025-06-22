@@ -54,7 +54,7 @@ layers:
   - 🌐
   - Gui+Alt+I
   - {t: RAYCAST, h: CLIPBOARD}
-  - ⌫
+  - {t: ⇥, h: FUN}
   - {t: ⎵, h: ACTIONS}
   - {t: ⏎, h: SYMBOLS}
   - ⇥
@@ -136,8 +136,8 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - 📋
-  - 🖨️
+  - ⌘Q
+  - Gui+W
   - 🌍
   - OUT USB
   - OUT BLE
@@ -252,6 +252,33 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
+  - F10
+  - F11
+  - F12
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - F7
+  - F8
+  - F9
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - ⇧
+  - ⌃
+  - ⌥
+  - ⌘
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - F4
+  - F5
+  - F6
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -263,42 +290,15 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
+  - F1
+  - F2
+  - F3
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - {type: held}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -366,3 +366,7 @@ layers:
   - {t: ' ', type: trans}
   - Sft+Gui+V
   - {t: BASE, h: toggle}
+combos:
+- p: [28, 31]
+  k: 🔠
+  l: [BASE]
