@@ -276,11 +276,11 @@
             //              |      |       |       |       |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &ext_power EP_TOG  &ext_power EP_OFF  &ext_power EP_ON  &trans     &trans   &trans
-&trans       &kp INS       &kp PSCRN     &kp K_CMENU   &out OUT_USB  &out OUT_BLE                                         &kp PG_UP          &kp HOME           &kp UP            &kp END    &trans   &trans
-&trans       &kp LALT      &kp LCTRL     &kp LSHFT     &kp LCMD      &kp CLCK                                             &kp PG_DN          &kp LEFT           &kp DOWN          &kp RIGHT  &kp DEL  &kp BSPC
-&bootloader  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &rgb_ug RGB_HUD  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI    &trans             &trans            &trans     &trans   &bootloader
-                           &trans        &trans        &trans        &rgb_ug RGB_SPD  &trans             &trans           &rgb_ug RGB_SPI    &trans             &trans            &tog 5
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &ext_power EP_TOG  &trans    &trans    &trans     &trans   &trans
+&trans       &kp INS       &kp PSCRN     &kp K_CMENU   &out OUT_USB  &out OUT_BLE                                         &kp PG_UP          &kp HOME  &kp UP    &kp END    &trans   &trans
+&trans       &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LCMD      &kp CLCK                                             &kp PG_DN          &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
+&bootloader  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &rgb_ug RGB_HUD  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI    &trans    &trans    &trans     &trans   &bootloader
+                           &trans        &trans        &trans        &rgb_ug RGB_SPD  &trans             &trans           &rgb_ug RGB_SPI    &trans    &trans    &tog 5
             >;
 
             sensor-bindings = <&rgb_brightness>, <&rgb_saturation>;
