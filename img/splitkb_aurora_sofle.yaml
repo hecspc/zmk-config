@@ -62,18 +62,18 @@ layers:
   - ↓
   - {t: ZOOM, h: toggle}
   SYMBOLS:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   - '`'
   - '1'
   - '2'
@@ -86,7 +86,7 @@ layers:
   - '9'
   - '0'
   - ''
-  - {t: ' ', type: trans}
+  - '~'
   - '!'
   - '@'
   - '#'
