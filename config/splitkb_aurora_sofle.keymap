@@ -338,11 +338,11 @@
 
         windows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans     &kp LA(I)  &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                          &kp LA(H)  &kp LA(J)  &kp LA(K)  &kp LA(L)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans     &trans     &kp LA(M)  &trans     &trans     &trans  &trans
-                &trans  &trans  &trans  &trans  &kp LA(S)    &kp LA(B)  &trans     &trans     &trans     &trans
+&trans  &trans  &trans     &trans  &trans  &trans                          &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans                          &trans     &kp LA(I)  &trans     &trans     &trans  &trans
+&trans  &trans  &kp LA(D)  &trans  &trans  &trans                          &kp LA(H)  &kp LA(J)  &kp LA(K)  &kp LA(L)  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans  &trans       &trans     &trans     &kp LA(M)  &trans     &trans     &trans  &trans
+                &trans     &trans  &trans  &trans  &kp LA(S)    &kp LA(B)  &trans     &trans     &trans     &trans
             >;
 
             label = "WINDOWS";
