@@ -15,6 +15,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 /* * Keymap for the Aurora Sofle keyboard.
@@ -31,13 +32,12 @@
  */
 // move nice!view CS pin to D0
 
-
 #define BASE      0
 #define SYMBOLS   1
 #define ACTIONS   2
 #define TMUX      3
 #define FUN       4
-#define ZOOM      5 
+#define ZOOM      5
 #define WINDOWS   6
 #define MOUSE     7
 
@@ -254,11 +254,11 @@
             //               |CTRL | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   | RALT |
 
             bindings = <
-&kp ESC         &kp N1         &kp N2             &kp N3               &kp N4                    &kp N5                                      &kp N6   &kp N7             &kp N8              &kp N9        &kp N0           &kp MINUS
-&kp EQUAL       &kp Q          &kp W              &hml LEFT_BRACKET E  &hml RIGHT_BRACKET R      &kp T                                       &kp Y    &hmr LEFT_BRACE U  &hmr RIGHT_BRACE I  &kp O         &kp P            &kp BACKSLASH
-&lt 3 LC(A)     &hml LSHIFT A  &hml LCTRL S       &hml LALT D          &hml LCMD F               &kp G                                       &kp H    &hmr RCMD J        &hmr RALT K         &hmr RCTRL L  &hmr RSHFT SEMI  &kp SQT
-&kp LEFT_ARROW  &hml LG(Z) Z   &hml LG(X) X       &hml LG(C) C         &hml LG(V) V              &kp B          &kp C_MUTE     &lock_screen  &kp N    &kp M              &kp COMMA           &kp DOT       &kp FSLH         &kp RIGHT_ARROW
-                               &kp LS(LC(LA(E)))  &kp LG(LA(I))        &hml LG(LS(C)) LG(SPACE)  &kp BACKSPACE  &lt ACTIONS SPACE    &lt SYMBOLS ENTER   &kp TAB  &kp UP_ARROW       &kp DOWN_ARROW      &tog ZOOM 
+&kp ESC         &kp N1         &kp N2             &kp N3               &kp N4                    &kp N5                                                 &kp N6   &kp N7             &kp N8              &kp N9        &kp N0           &kp MINUS
+&kp EQUAL       &kp Q          &kp W              &hml LEFT_BRACKET E  &hml RIGHT_BRACKET R      &kp T                                                  &kp Y    &hmr LEFT_BRACE U  &hmr RIGHT_BRACE I  &kp O         &kp P            &kp BACKSLASH
+&lt 3 LC(A)     &hml LSHIFT A  &hml LCTRL S       &hml LALT D          &hml LCMD F               &kp G                                                  &kp H    &hmr RCMD J        &hmr RALT K         &hmr RCTRL L  &hmr RSHFT SEMI  &kp SQT
+&kp LEFT_ARROW  &hml LG(Z) Z   &hml LG(X) X       &hml LG(C) C         &hml LG(V) V              &kp B          &kp C_MUTE           &lock_screen       &kp N    &kp M              &kp COMMA           &kp DOT       &kp FSLH         &kp RIGHT_ARROW
+                               &kp LS(LC(LA(E)))  &kp LG(LA(I))        &hml LG(LS(C)) LG(SPACE)  &kp BACKSPACE  &lt ACTIONS SPACE    &lt SYMBOLS ENTER  &kp TAB  &kp UP_ARROW       &kp DOWN_ARROW      &tog ZOOM
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -297,11 +297,11 @@
             //              |      |       |       |       |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &ext_power EP_TOG  &trans    &trans    &trans     &trans   &trans
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &ext_power EP_TOG  &trans    &tog 7    &trans     &trans   &trans
 &trans       &kp LG(Q)     &kp LG(W)     &kp K_CMENU   &out OUT_USB  &out OUT_BLE                                         &kp PG_UP          &kp HOME  &kp UP    &kp END    &trans   &trans
 &trans       &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LCMD      &kp CLCK                                             &kp PG_DN          &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
 &bootloader  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &rgb_ug RGB_HUD  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI    &trans    &trans    &trans     &trans   &bootloader
-                           &trans        &trans        &trans        &rgb_ug RGB_SPD  &trans             &trans           &rgb_ug RGB_SPI    &trans    &trans    &tog ZOOM 
+                           &trans        &trans        &trans        &rgb_ug RGB_SPD  &trans             &trans           &rgb_ug RGB_SPI    &trans    &trans    &tog ZOOM
             >;
 
             sensor-bindings = <&rgb_brightness>, <&rgb_saturation>;
@@ -333,10 +333,10 @@
 
         zoom {
             bindings = <
-&trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans         &trans  &trans  &trans
-&trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans         &trans  &trans  &trans
-&trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans         &trans  &trans  &trans
-&trans  &trans  &trans         &trans         &trans  &trans  &kp K_MUTE    &kp LS(LG(A))  &trans  &trans  &trans         &trans  &trans  &trans
+&trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans         &trans    &trans  &trans
+&trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans         &trans    &trans  &trans
+&trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans         &trans    &trans  &trans
+&trans  &trans  &trans         &trans         &trans  &trans  &kp K_MUTE    &kp LS(LG(A))  &trans  &trans  &trans         &trans    &trans  &trans
                 &kp LS(LG(S))  &kp LS(LG(R))  &trans  &trans  &trans        &trans         &trans  &trans  &kp LS(LG(V))  &to BASE
             >;
 
@@ -356,6 +356,18 @@
             >;
 
             label = "WINDOWS";
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans          &trans        &trans          &trans                                &trans     &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans          &trans        &trans          &trans                                &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &trans  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT                       &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans          &trans        &trans          &trans           &trans    &trans     &trans     &trans          &trans          &trans           &trans  &trans
+                &trans          &trans        &trans          &trans           &to 0     &mkp LCLK  &mkp RCLK  &trans          &trans          &trans
+            >;
+
+            label = "MOUSE";
         };
     };
 
