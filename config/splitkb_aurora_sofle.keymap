@@ -139,6 +139,8 @@
             label = "LOCK_SCREEN";
             #binding-cells = <0>;
             bindings = <&kp LC(LG(Q))>, <&kp LG(LC(LS(Q)))>;
+
+            tapping-term-ms = <50>;
         };
 
         rgb_brightness: rgb_brightness {
@@ -297,11 +299,11 @@
             //              |      |       |       |       |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &ext_power EP_TOG  &trans    &tog MOUSE    &trans     &trans   &trans
-&trans       &kp LG(Q)     &kp LG(W)     &kp K_CMENU   &out OUT_USB  &out OUT_BLE                                         &kp PG_UP          &kp HOME  &kp UP    &kp END    &trans   &trans
-&trans       &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LCMD      &kp CLCK                                             &kp PG_DN          &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&bootloader  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &rgb_ug RGB_HUD  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI    &trans    &trans    &trans     &trans   &bootloader
-                           &trans        &trans        &trans        &rgb_ug RGB_SPD  &trans             &trans           &rgb_ug RGB_SPI    &trans    &trans    &tog ZOOM
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &ext_power EP_TOG  &trans    &tog MOUSE  &trans     &trans   &trans
+&trans       &kp LG(Q)     &kp LG(W)     &kp K_CMENU   &out OUT_USB  &out OUT_BLE                                         &kp PG_UP          &kp HOME  &kp UP      &kp END    &trans   &trans
+&trans       &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LCMD      &kp CLCK                                             &kp PG_DN          &kp LEFT  &kp DOWN    &kp RIGHT  &kp DEL  &kp BSPC
+&bootloader  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &rgb_ug RGB_HUD  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI    &trans    &trans      &trans     &trans   &bootloader
+                           &trans        &trans        &trans        &rgb_ug RGB_SPD  &trans             &trans           &rgb_ug RGB_SPI    &trans    &trans      &tog ZOOM
             >;
 
             sensor-bindings = <&rgb_brightness>, <&rgb_saturation>;
