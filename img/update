@@ -2,7 +2,7 @@
 
 set -e
 
-LAYERS="BASE SYMBOLS ACTIONS FUN TMUX ZOOM MOUSE"
+LAYERS="BASE SYMBOLS ACTIONS FUN TMUX ZOOM MOUSE WINDOWS"
 
 draw() {
 	keymap -c img/config.yaml parse -z config/"$1".keymap >./img/"$1".yaml
