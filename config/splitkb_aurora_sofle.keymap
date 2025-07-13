@@ -229,6 +229,20 @@
             bindings = <&kp LC(A) &kp C>;
             label = "TMUX_NEW_TAB";
         };
+
+        thin_arrow: thin_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "THIN_ARROW";
+        };
+
+        fat_arrow: fat_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "FAT_ARROW";
+        };
     };
 
     combos {
@@ -278,11 +292,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &trans            &trans         &trans            &trans             &trans                        &trans         &trans      &trans                &trans                 &trans        &trans
-&trans  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD                    &kp AMPERSAND  &kp GRAVE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &trans
-&trans  &kp EXCL          &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                      &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
-&trans  &kp CARET         &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &kp RBRC    &trans    &trans  &kp TILDE      &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT        &trans
-                          &trans         &trans            &trans             &trans      &trans    &trans  &trans         &trans      &trans                &trans
+&trans  &trans     &trans         &trans            &trans             &trans                           &trans     &trans                &trans                 &trans         &trans             &trans
+&trans  &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE                         &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &trans             &trans
+&trans  &kp EXCL   &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND                    &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
+&trans  &kp TILDE  &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &trans    &trans  &kp AT     &kp COLON             &kp COMMA              &kp PERIOD     &kp APOSTROPHE     &trans
+                   &trans         &trans            &trans             &trans         &trans    &trans  &trans     &trans                &trans                 &trans
             >;
 
             sensor-bindings = <&rgb_saturation &rgb_hue>;
