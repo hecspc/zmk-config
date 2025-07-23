@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - \
-  - {t: 🖥️, h: TMUX}
+  - {t: RAYCAST, h: CLIPBOARD}
   - {t: A, h: ⇧}
   - {t: S, h: ⌃}
   - {t: D, h: ⌥}
@@ -53,7 +53,7 @@ layers:
   - →
   - 🌐
   - Gui+Alt+I
-  - {t: RAYCAST, h: CLIPBOARD}
+  - {t: 🖥️, h: TMUX}
   - ⌫
   - {t: ⎵, h: ACTIONS}
   - {t: ⏎, h: SYMBOLS}
@@ -208,7 +208,7 @@ layers:
   - '&tmux_new_tab'
   - ''
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - Ctl+⎵
@@ -229,14 +229,14 @@ layers:
   - ''
   - ''
   - ''
+  - '&tmux_new_session'
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
