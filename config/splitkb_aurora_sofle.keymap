@@ -262,7 +262,7 @@
             timeout-ms = <50>;
         };
 
-        ESC_INDEX {
+        esc_index {
             bindings = <&kp ESC>;
             key-positions = <31 32>;
             layers = <0>;
