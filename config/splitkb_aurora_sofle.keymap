@@ -261,6 +261,12 @@
             layers = <0>;
             timeout-ms = <50>;
         };
+
+        ESC_INDEX {
+            bindings = <&kp ESC>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
     };
 
     keymap {
