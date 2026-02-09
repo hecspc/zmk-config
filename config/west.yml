@@ -12,14 +12,14 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: ac7f75b8591d39aaf3b66b9d26f26c9ed921a009
       import: app/west.yml
     # support nice_oled and nice_epaper
     - name: zmk-nice-oled
       remote: mctechnology17
-      revision: main
+      revision: 46f824abb2bd41f1287c5c68abd14122af6042a3
     - name: nice-view-gem
       remote: m165437
-      revision: main
+      revision: 6650b55a519879e4cf55ba60c5fc67062edd833f
   self:
     path: config
