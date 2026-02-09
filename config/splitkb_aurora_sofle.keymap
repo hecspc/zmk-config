@@ -306,7 +306,6 @@
               &none  &none          &none        &none  &none    &none  &none               &none                 &none                   &none
             >;
 
-            label = "TMUX";
         };
 
         fun {
@@ -318,7 +317,6 @@
                    &trans     &trans    &trans    &trans  &trans    &trans  &trans  &trans   &trans   &trans
             >;
 
-            label = "FUN";
         };
 
         zoom {
@@ -330,7 +328,6 @@
                 &kp LS(LG(S))  &kp LS(LG(R))  &trans  &trans  &trans        &trans         &trans  &trans  &kp LS(LG(V))  &to BASE
             >;
 
-            label = "ZOOM";
             sensor-bindings =
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
                 <&inc_dec_kp PG_DN PG_UP>;
@@ -345,7 +342,6 @@
                 &trans     &trans  &trans  &trans  &kp LA(S)    &kp LA(B)  &trans     &trans     &trans     &trans
             >;
 
-            label = "WINDOWS";
         };
 
         mouse {
@@ -357,7 +353,6 @@
                 &trans          &trans        &trans          &trans           &to 0     &mkp LCLK  &mkp RCLK  &trans          &trans          &trans
             >;
 
-            label = "MOUSE";
         };
     };
 
