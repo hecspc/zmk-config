@@ -130,7 +130,7 @@ layers:
   - 🛜4
   - 🛜5
   - 🔌
-  - {t: ' ', type: trans}
+  - {t: WINDOWS, h: toggle}
   - {t: MOUSE, h: toggle}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
