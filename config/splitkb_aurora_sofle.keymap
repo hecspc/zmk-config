@@ -298,6 +298,7 @@
         };
 
         tmux {
+            display-name = "TMUX";
             bindings = <
 &none  &none  &none  &none          &none        &none                  &none               &none                 &none                   &none           &none  &none
 &none  &none  &none  &none          &none        &none                  &none               &tmux_split_vertical  &tmux_split_horizontal  &tmux_new_tab   &none  &none
@@ -309,6 +310,7 @@
         };
 
         fun {
+            display-name = "FUN";
             bindings = <
 &trans  &trans     &trans     &trans    &trans    &trans                    &trans  &kp F10  &kp F11  &kp F12  &trans  &trans
 &trans  &trans     &trans     &trans    &trans    &trans                    &trans  &kp F7   &kp F8   &kp F9   &trans  &trans
@@ -320,6 +322,7 @@
         };
 
         zoom {
+            display-name = "ZOOM";
             bindings = <
 &trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans         &trans    &trans  &trans
 &trans  &trans  &trans         &trans         &trans  &trans                               &trans  &trans  &trans         &trans    &trans  &trans
@@ -334,6 +337,7 @@
         };
 
         windows {
+            display-name = "WINDOWS";
             bindings = <
 &trans  &trans  &trans     &trans  &trans  &trans                          &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans     &trans  &trans  &trans                          &trans     &kp LA(I)  &trans     &trans     &trans  &trans
@@ -345,6 +349,7 @@
         };
 
         mouse {
+            display-name = "MOUSE";
             bindings = <
 &trans  &trans  &trans          &trans        &trans          &trans                                &trans     &trans          &trans          &trans           &trans  &trans
 &trans  &trans  &trans          &trans        &trans          &trans                                &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
