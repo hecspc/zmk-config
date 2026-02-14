@@ -52,14 +52,14 @@ layers:
   - /
   - →
   - 🌐
-  - Gui+Alt+I
+  - WINDOWS
   - {t: 🖥️, h: TMUX}
   - ⌫
   - {t: ⎵, h: ACTIONS}
   - {t: ⏎, h: SYMBOLS}
   - ⇥
   - ↑
-  - ↓
+  - Gui+Alt+I
   - {t: ZOOM, h: toggle}
   SYMBOLS:
   - {t: ' ', type: trans}
@@ -418,7 +418,7 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - {type: held}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - Alt+S
