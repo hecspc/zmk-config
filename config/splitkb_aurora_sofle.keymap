@@ -84,9 +84,8 @@
 
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;        // repeat on tap-into-hold
-            global-quick-tap;           // use tap when key is used without another key
-            // global-quick-tap-ms = <150>; // requires PR #1387
+            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            require-prior-idle-ms = <150>;
 
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;       // requires PR #1423
@@ -100,11 +99,8 @@
 
             flavor = "balanced";
             tapping-term-ms = <280>;
-            global-quick-tap;
-
-            // global-quick-tap-ms = <150>;         // requires PR #1387
-
             quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;       // requires PR #1423
         };
@@ -115,7 +111,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LG(Q))>, <&kp LG(LC(LS(Q)))>;
 
-            tapping-term-ms = <50>;
+            tapping-term-ms = <250>;
         };
 
         rgb_brightness: rgb_brightness {
@@ -227,6 +223,7 @@
             bindings = <&kp ESC>;
             key-positions = <31 32>;
             layers = <0>;
+            timeout-ms = <50>;
         };
     };
 
@@ -236,34 +233,19 @@
         base {
             display-name = "BASE";
 
-            // ------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
-            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
-            // |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            //               |CTRL | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   | RALT |
-
             bindings = <
 &kp ESC                   &kp N1         &kp N2             &kp N3        &kp N4          &kp N5                                                 &kp N6   &kp N7        &kp N8         &kp N9        &kp N0           &kp MINUS
 &kp EQUAL                 &kp Q          &kp W              &kp E         &kp R           &kp T                                                  &kp Y    &kp U         &kp I          &kp O         &kp P            &kp BACKSLASH
 &hml LG(LS(C)) LG(SPACE)  &hml LSHIFT A  &hml LCTRL S       &hml LALT D   &hml LCMD F     &kp G                                                  &kp H    &hmr RCMD J   &hmr RALT K    &hmr RCTRL L  &hmr RSHFT SEMI  &kp SQT
-&kp LEFT_ARROW            &hml LG(Z) Z   &hml LG(X) X       &hml LG(C) C  &hml LG(V) V    &kp B          &kp C_MUTE           &lock_screen       &kp N    &kp M         &kp COMMA      &kp DOT       &kp FSLH         &kp RIGHT_ARROW
+&kp LEFT_ARROW            &mt LG(Z) Z    &mt LG(X) X        &mt LG(C) C   &mt LG(V) V     &kp B          &kp C_MUTE           &lock_screen       &kp N    &kp M         &kp COMMA      &kp DOT       &kp FSLH         &kp RIGHT_ARROW
                                          &kp LS(LC(LA(E)))  &mo 6         &lt TMUX LC(A)  &kp BACKSPACE  &lt ACTIONS SPACE    &lt SYMBOLS ENTER  &kp TAB  &kp UP_ARROW  &kp LG(LA(I))  &tog ZOOM
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         symbols {
             display-name = "SYMBOLS";
-
-            // TODO: Some binds are waiting for shifted keycode support.
-            // ------------------------------------------------------------------------------------------------------------
-            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // | `     |   1 |   2 |   3  |   4  |   5  |                   |   6  |   7   |   8   |   9  |    0  |       |
-            // |       |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   |   |
-            // |       |  =  |  -  |  +   |  {   |  }   |        |  |       |  [   |  ]    |  ;    |  :   |   \   |       |
-            //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
 &trans  &trans     &trans         &trans            &trans             &trans                           &trans     &trans                &trans                 &trans         &trans             &trans
@@ -278,13 +260,6 @@
 
         actions {
             display-name = "ACTIONS";
-
-            // ------------------------------------------------------------------------------------------------------------
-            // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5  |                |      |      |       |      |       |       |
-            // |     | INS  | PSCR | GUI   | USB O | BLE O |                | PGUP | HOME |   ^   | END  |       |       |
-            // |     | ALT  | CTRL | SHIFT |       | CAPS  |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-            // |     | UNDO | CUT  | COPY  | PASTE |       |      |  |      |      |      |       |      |       |       |
-            //              |      |       |       |       |      |  |      |      |      |       |      |
 
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &ext_power EP_TOG  &tog WINDOWS  &tog MOUSE  &trans     &trans   &trans
@@ -352,7 +327,7 @@
 &trans  &trans  &trans          &trans        &trans          &trans                                &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
 &trans  &trans  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT                       &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans          &trans        &trans          &trans           &trans    &trans     &trans     &trans          &trans          &trans           &trans  &trans
-                &trans          &trans        &trans          &trans           &to 0     &mkp LCLK  &mkp RCLK  &trans          &trans          &trans
+                &trans          &trans        &trans          &trans           &to BASE     &mkp LCLK  &mkp RCLK  &trans          &trans          &trans
             >;
         };
     };
