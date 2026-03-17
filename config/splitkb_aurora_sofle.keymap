@@ -105,8 +105,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LOCK_SCREEN";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(Q))>, <&kp LG(LC(LS(Q)))>;
-            tapping-term-ms = <250>;
+            bindings = <&kp LC(LG(Q))>, <&kp C_SLEEP>;
+            tapping-term-ms = <300>;
         };
 
         bt_clr_td: bt_clr_tap_dance {
