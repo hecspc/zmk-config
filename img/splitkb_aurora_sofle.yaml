@@ -157,8 +157,8 @@ layers:
   - ←
   - ↓
   - →
-  - ⌦
-  - ⌫
+  - {t: ' ', type: trans}
+  - '&mac_sleep'
   - '&boot_td'
   - ↩️
   - CUT
@@ -172,7 +172,7 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - '&boot_td'
+  - '&mac_lock'
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
