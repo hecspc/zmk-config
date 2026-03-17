@@ -351,8 +351,8 @@
             bindings = <
 &bt_clr_td  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &ext_power EP_TOG  &tog WINDOWS  &tog MOUSE   &tog NUMPAD    &kp C_PREV   &kp C_NEXT
 &trans      &kp LG(Q)     &kp LG(W)     &kp K_CMENU   &out OUT_USB  &out OUT_BLE                                         &kp PG_UP          &kp HOME      &kp UP       &kp END        &kp C_PP     &trans
-&trans      &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LCMD      &kp CLCK                                             &kp PG_DN          &kp LEFT      &kp DOWN     &kp RIGHT      &kp DEL      &kp BSPC
-&boot_td    &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &rgb_ug RGB_HUD  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI    &trans        &trans       &trans         &trans       &boot_td
+&trans      &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LCMD      &kp CLCK                                             &kp PG_DN          &kp LEFT      &kp DOWN     &kp RIGHT      &trans       &mac_sleep
+&boot_td    &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &rgb_ug RGB_HUD  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI    &trans        &trans       &trans         &trans       &mac_lock
                           &trans        &trans        &trans        &rgb_ug RGB_SPD  &trans             &trans           &rgb_ug RGB_SPI    &trans        &trans       &tog ZOOM
             >;
 
