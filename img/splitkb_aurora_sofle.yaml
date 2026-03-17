@@ -123,7 +123,7 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   ACTIONS:
-  - 🛜❌
+  - '&bt_clr_td'
   - 🛜1
   - 🛜2
   - 🛜3
@@ -132,9 +132,9 @@ layers:
   - 🔌
   - {t: WINDOWS, h: toggle}
   - {t: MOUSE, h: toggle}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - {t: NUMPAD, h: toggle}
+  - ⏮️
+  - ⏭️
   - {t: ' ', type: trans}
   - ⌘Q
   - Gui+W
@@ -145,7 +145,7 @@ layers:
   - ⇱
   - ↑
   - ⇲
-  - {t: ' ', type: trans}
+  - ⏯️
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - ⇧
@@ -159,7 +159,7 @@ layers:
   - →
   - ⌦
   - ⌫
-  - 💾
+  - '&boot_td'
   - ↩️
   - CUT
   - COPY
@@ -172,7 +172,7 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - 💾
+  - '&boot_td'
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -485,13 +485,83 @@ layers:
   - {t: BASE, h: toggle}
   - '&mkp LCLK'
   - '&mkp RCLK'
+  - '&mkp MCLK'
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  NUMPAD:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - /
+  - '*'
+  - '-'
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ⇧, h: sticky}
+  - {t: ⌃, h: sticky}
+  - {t: ⌥, h: sticky}
+  - {t: ⌘, h: sticky}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - ⏎
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - ⏎
+  - '0'
+  - '0'
+  - .
+  - {t: NUMPAD, h: toggle}
 combos:
 - p: [28, 31]
   k: 🔠
   l: [BASE]
 - p: [31, 32]
   k: ⎋
+  l: [BASE]
+- p: [32, 33]
+  k: ⇥
+  l: [BASE]
+- p: [33, 34]
+  k: ⏎
+  l: [BASE]
+- p: [46, 47]
+  k: '&key_repeat'
   l: [BASE]
