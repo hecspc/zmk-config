@@ -20,6 +20,6 @@ manifest:
       revision: 46f824abb2bd41f1287c5c68abd14122af6042a3
     - name: nice-view-gem
       remote: m165437
-      revision: 0a50fe209d929c916c5664c6affd0f4977c6b012
+      revision: 6650b55a519879e4cf55ba60c5fc67062edd833f
   self:
     path: config
