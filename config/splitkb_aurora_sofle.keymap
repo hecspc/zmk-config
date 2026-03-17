@@ -105,7 +105,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LOCK_SCREEN";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(Q))>, <&kp C_SLEEP>;
+            bindings = <&mac_lock>, <&mac_sleep>;
             tapping-term-ms = <300>;
         };
 
@@ -149,6 +149,30 @@
     };
 
     macros {
+        mac_lock: mac_lock {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "MAC_LOCK";
+            bindings
+                = <&macro_press &kp LCTRL &kp LGUI>
+                , <&macro_tap &kp Q>
+                , <&macro_release &kp LGUI &kp LCTRL>
+                ;
+        };
+
+        mac_sleep: mac_sleep {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "MAC_SLEEP";
+            bindings
+                = <&macro_press &kp LCTRL &kp LGUI>
+                , <&macro_tap &kp Q>
+                , <&macro_release &kp LGUI &kp LCTRL>
+                , <&macro_wait_time 200>
+                , <&macro_tap &kp C_SLEEP>
+                ;
+        };
+
         tmux_split_vertical: tmux_split_vertical {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
