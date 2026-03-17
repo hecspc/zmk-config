@@ -33,8 +33,10 @@
 &nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
 
 &mt {
-    tapping-term-ms = <240>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <300>;
     quick-tap-ms = <175>;
+    require-prior-idle-ms = <200>;
 };
 
 &lt {
