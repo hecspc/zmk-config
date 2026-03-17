@@ -147,10 +147,10 @@
         };
 
         mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
+            compatible = "zmk,behavior-sensor-rotate-var";
             label = "MOUSE_SCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
             tap-ms = <30>;
         };
     };
@@ -309,7 +309,7 @@
                                          &kp LS(LC(LA(E)))  &mo WINDOWS   &lt TMUX LC(A)  &kp BACKSPACE  &lt ACTIONS SPACE    &lt SYMBOLS ENTER  &kp TAB  &kp UP_ARROW  &kp LG(LA(I))  &tog ZOOM
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&mouse_scroll SCRL_DOWN SCRL_UP>;
         };
 
         symbols {
@@ -398,7 +398,7 @@
                 &trans          &trans        &trans          &trans           &to BASE    &mkp LCLK  &mkp RCLK  &mkp MCLK       &trans          &trans
             >;
 
-            sensor-bindings = <&mouse_scroll>, <&mouse_scroll>;
+            sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>, <&mouse_scroll SCRL_DOWN SCRL_UP>;
         };
 
         numpad {
