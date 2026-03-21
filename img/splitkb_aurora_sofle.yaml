@@ -146,7 +146,7 @@ layers:
   - ↑
   - ⇲
   - ⏯️
-  - {t: ' ', type: trans}
+  - Gui+Sft+5
   - {t: ' ', type: trans}
   - ⇧
   - ⌃
@@ -157,7 +157,7 @@ layers:
   - ←
   - ↓
   - →
-  - {t: ' ', type: trans}
+  - Alt+⌦
   - '&mac_sleep'
   - '&boot_td'
   - ↩️
@@ -168,9 +168,9 @@ layers:
   - RGB TOG
   - RGB EFF
   - RGB HUI
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - Gui+Sft+3
+  - Gui+Sft+4
+  - Alt+⌫
   - {t: ' ', type: trans}
   - '&mac_lock'
   - {t: ' ', type: trans}
@@ -502,10 +502,10 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - ⇞
+  - ⇱
+  - ↑
+  - ⇲
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - '7'
@@ -514,10 +514,10 @@ layers:
   - +
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ⇧, h: sticky}
-  - {t: ⌃, h: sticky}
-  - {t: ⌥, h: sticky}
-  - {t: ⌘, h: sticky}
+  - ⇟
+  - ←
+  - ↓
+  - →
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - '4'
@@ -526,10 +526,10 @@ layers:
   - '='
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - {t: ⇧, h: sticky}
+  - {t: ⌃, h: sticky}
+  - {t: ⌥, h: sticky}
+  - {t: ⌘, h: sticky}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -564,4 +564,7 @@ combos:
   l: [BASE]
 - p: [46, 47]
   k: '&key_repeat'
+  l: [BASE]
+- p: [37, 38]
+  k: Gui+Sft+Z
   l: [BASE]
