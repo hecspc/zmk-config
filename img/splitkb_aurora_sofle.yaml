@@ -164,10 +164,10 @@ layers:
   - CUT
   - COPY
   - PASTE
-  - RGB HUD
-  - RGB TOG
-  - RGB EFF
-  - RGB HUI
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
   - Gui+Sft+3
   - Gui+Sft+4
   - Alt+⌫
@@ -176,10 +176,10 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - RGB SPD
+  - {t: ' ', type: trans}
   - {type: held}
   - {t: ' ', type: trans}
-  - RGB SPI
+  - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ZOOM, h: toggle}
