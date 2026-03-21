@@ -273,6 +273,138 @@
                 , <&macro_tap &kp LS(S)>
                 ;
         };
+
+        tmux_lazygit: tmux_lazygit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TMUX_LAZYGIT";
+            bindings
+                = <&macro_tap &kp LC(A)>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp G>
+                ;
+        };
+
+        tmux_copy_mode: tmux_copy_mode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TMUX_COPY_MODE";
+            bindings
+                = <&macro_tap &kp LC(A)>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp LBKT>
+                ;
+        };
+
+        tmux_paste: tmux_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TMUX_PASTE";
+            bindings
+                = <&macro_tap &kp LC(A)>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp LS(P)>
+                ;
+        };
+
+        tmux_last_window: tmux_last_window {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TMUX_LAST_WINDOW";
+            bindings
+                = <&macro_tap &kp LC(A)>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp LC(A)>
+                ;
+        };
+
+        tmux_last_session: tmux_last_session {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TMUX_LAST_SESSION";
+            bindings
+                = <&macro_tap &kp LC(A)>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp LS(L)>
+                ;
+        };
+
+        tmux_kill_pane: tmux_kill_pane {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TMUX_KILL_PANE";
+            bindings
+                = <&macro_tap &kp LC(A)>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp X>
+                ;
+        };
+
+        tmux_break_pane: tmux_break_pane {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TMUX_BREAK_PANE";
+            bindings
+                = <&macro_tap &kp LC(A)>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp B>
+                ;
+        };
+
+        tmux_extrakto: tmux_extrakto {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TMUX_EXTRAKTO";
+            bindings
+                = <&macro_tap &kp LC(A)>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp TAB>
+                ;
+        };
+
+        tmux_save: tmux_save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TMUX_SAVE";
+            bindings
+                = <&macro_tap &kp LC(A)>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp LC(S)>
+                ;
+        };
+
+        tmux_restore: tmux_restore {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TMUX_RESTORE";
+            bindings
+                = <&macro_tap &kp LC(A)>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp LC(R)>
+                ;
+        };
+
+        tmux_rename: tmux_rename {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TMUX_RENAME";
+            bindings
+                = <&macro_tap &kp LC(A)>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp COMMA>
+                ;
+        };
+
+        tmux_fzf: tmux_fzf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TMUX_FZF";
+            bindings
+                = <&macro_tap &kp LC(A)>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp LS(F)>
+                ;
+        };
     };
 
     combos {
@@ -362,11 +494,11 @@
         tmux {
             display-name = "TMUX";
             bindings = <
-&none  &none  &none  &none          &none        &none                  &none               &none                 &none                   &none           &none  &none
-&none  &none  &none  &none          &none        &none                  &none               &tmux_split_vertical  &tmux_split_horizontal  &tmux_new_tab   &none  &none
-&none  &none  &none  &kp LC(SPACE)  &tmux_focus  &none                  &tmux_previous_tab  &tmux_jump            &tmux_sessions          &tmux_next_tab  &none  &none
-&none  &none  &none  &none          &none        &none  &none    &none  &none               &tmux_new_session     &none                   &none           &none  &none
-              &none  &none          &none        &none  &none    &none  &none               &none                 &none                   &none
+&none  &none       &none         &none            &none        &none                   &none               &none                 &none                   &none           &none            &none
+&none  &none       &none         &tmux_extrakto   &none        &none                   &none               &tmux_split_vertical  &tmux_split_horizontal  &tmux_new_tab   &tmux_rename     &none
+&none  &tmux_save  &tmux_restore &tmux_copy_mode  &tmux_focus  &tmux_paste             &tmux_previous_tab  &tmux_jump            &tmux_sessions          &tmux_next_tab  &tmux_kill_pane  &none
+&none  &none       &none         &tmux_lazygit    &none        &none  &none    &none   &none               &tmux_new_session     &tmux_break_pane        &tmux_fzf       &none            &none
+                   &none         &none            &none        &none  &none    &none   &none               &tmux_last_window     &tmux_last_session      &none
             >;
         };
 
@@ -399,11 +531,11 @@
         windows {
             display-name = "WINDOWS";
             bindings = <
-&trans  &trans  &trans     &trans  &trans  &trans                          &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans                          &trans     &kp LA(I)  &trans     &trans     &trans  &trans
-&trans  &trans  &kp LA(D)  &trans  &trans  &trans                          &kp LA(H)  &kp LA(J)  &kp LA(K)  &kp LA(L)  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans  &trans       &trans     &trans     &kp LA(M)  &trans     &trans     &trans  &trans
-                &trans     &trans  &trans  &trans  &kp LA(S)    &kp LA(B)  &trans     &trans     &trans     &trans
+&trans  &kp LS(LA(N1))  &kp LS(LA(N2))  &kp LS(LA(N3))  &kp LS(LA(N4))  &kp LS(LA(N5))                                   &kp LS(LA(N6))  &kp LS(LA(N7))  &trans          &trans          &kp LS(LA(P))  &kp LS(LA(N))
+&trans  &trans           &trans           &trans           &trans           &trans                                            &kp LS(LA(H))   &kp LS(LA(J))   &kp LS(LA(K))   &kp LS(LA(L))   &kp LA(I)      &kp LS(LA(I))
+&trans  &trans           &kp LA(D)        &kp LS(LA(Z))   &trans           &trans                                            &kp LA(H)       &kp LA(J)       &kp LA(K)       &kp LA(L)       &trans         &trans
+&trans  &trans           &kp LS(LA(X))    &kp LS(LA(Y))   &kp LS(LA(R))   &trans           &trans            &trans          &trans          &kp LA(M)       &kp LS(LA(E))   &kp LS(LA(T))   &kp LS(LA(M))  &trans
+                         &trans           &trans           &trans           &trans           &kp LA(S)         &kp LA(B)      &kp LS(LA(SPACE))  &trans       &trans          &trans
             >;
         };
 
