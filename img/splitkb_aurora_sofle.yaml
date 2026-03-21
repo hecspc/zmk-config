@@ -199,39 +199,39 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&tmux_extrakto'
   - ''
   - ''
   - ''
   - '&tmux_split_vertical'
   - '&tmux_split_horizontal'
   - '&tmux_new_tab'
+  - '&tmux_rename'
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - Ctl+⎵
+  - '&tmux_save'
+  - '&tmux_restore'
+  - '&tmux_copy_mode'
   - '&tmux_focus'
-  - ''
+  - '&tmux_paste'
   - '&tmux_previous_tab'
   - '&tmux_jump'
   - '&tmux_sessions'
   - '&tmux_next_tab'
+  - '&tmux_kill_pane'
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - '&tmux_lazygit'
   - ''
   - ''
   - ''
   - ''
   - ''
   - '&tmux_new_session'
-  - ''
-  - ''
+  - '&tmux_break_pane'
+  - '&tmux_fzf'
   - ''
   - ''
   - ''
@@ -241,8 +241,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - '&tmux_last_window'
+  - '&tmux_last_session'
   - ''
   FUN:
   - {t: ' ', type: trans}
@@ -368,33 +368,33 @@ layers:
   - {t: BASE, h: toggle}
   WINDOWS:
   - {t: ' ', type: trans}
+  - Sft+Alt+1
+  - Sft+Alt+2
+  - Sft+Alt+3
+  - Sft+Alt+4
+  - Sft+Alt+5
+  - Sft+Alt+6
+  - Sft+Alt+7
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - Sft+Alt+P
+  - Sft+Alt+N
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - Sft+Alt+H
+  - Sft+Alt+J
+  - Sft+Alt+K
+  - Sft+Alt+L
   - Alt+I
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - Sft+Alt+I
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - Alt+D
-  - {t: ' ', type: trans}
+  - Sft+Alt+Z
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - Alt+H
@@ -405,17 +405,17 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - Sft+Alt+X
+  - Sft+Alt+Y
+  - Sft+Alt+R
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - Alt+M
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
-  - {t: ' ', type: trans}
+  - Sft+Alt+E
+  - Sft+Alt+T
+  - Sft+Alt+M
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {type: held}
@@ -423,7 +423,7 @@ layers:
   - {t: ' ', type: trans}
   - Alt+S
   - Alt+B
-  - {t: ' ', type: trans}
+  - Sft+Alt+⎵
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
