@@ -321,11 +321,13 @@ Thumb:   ---  ---  ---  ---              Enter  0  0  .  tog NUMPAD
 | Layer | Left encoder | Right encoder |
 |-------|-------------|---------------|
 | BASE | Volume | Page Up/Down |
-| SYMBOLS | RGB Saturation | RGB Hue |
-| ACTIONS | RGB Brightness | RGB Saturation |
+| SYMBOLS | (inherit from BASE) | (inherit from BASE) |
+| ACTIONS | Volume | Page Up/Down |
 | ZOOM | Volume | Page Up/Down |
 | MOUSE | Page Up/Down | Page Up/Down |
 | Others | (inherit from below) | (inherit from below) |
+
+> **Note:** RGB underglow is disabled for battery savings (~15-29mA saved). To re-enable, uncomment the RGB config in `splitkb_aurora_sofle.conf` and restore the commented-out RGB lines in the keymap.
 
 ## Safety features
 
