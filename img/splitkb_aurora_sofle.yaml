@@ -54,7 +54,7 @@ layers:
   - 🌐
   - WINDOWS
   - {t: 🖥️, h: TMUX}
-  - ⌫
+  - {t: ⌫, s: DELETE}
   - {t: ⎵, h: ACTIONS}
   - {t: ⏎, h: SYMBOLS}
   - ⇥
@@ -171,7 +171,7 @@ layers:
   - Gui+Sft+3
   - Gui+Sft+4
   - Alt+⌫
-  - {t: ' ', type: trans}
+  - Ctl+6
   - '&mac_lock'
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -573,6 +573,9 @@ combos:
   l: [BASE]
 - p: [19, 20]
   k: ']'
+  l: [BASE]
+- p: [14, 16]
+  k: ⌃W
   l: [BASE]
 - p: [18, 19]
   k: Ctl+U
