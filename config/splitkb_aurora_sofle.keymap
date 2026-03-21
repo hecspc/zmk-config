@@ -444,6 +444,13 @@
             layers = <0>;
             timeout-ms = <50>;
         };
+
+        combo_redo {
+            bindings = <&kp LG(LS(Z))>;
+            key-positions = <37 38>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
@@ -481,11 +488,11 @@
             display-name = "ACTIONS";
 
             bindings = <
-&bt_clr_td  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &ext_power EP_TOG  &tog WINDOWS  &tog MOUSE   &tog NUMPAD    &kp C_PREV   &kp C_NEXT
-&trans      &kp LG(Q)     &kp LG(W)     &kp K_CMENU   &out OUT_USB  &out OUT_BLE                                         &kp PG_UP          &kp HOME      &kp UP       &kp END        &kp C_PP     &trans
-&trans      &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LCMD      &kp CLCK                                             &kp PG_DN          &kp LEFT      &kp DOWN     &kp RIGHT      &trans       &mac_sleep
-&boot_td    &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &rgb_ug RGB_HUD  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI    &trans        &trans       &trans         &trans       &mac_lock
-                          &trans        &trans        &trans        &rgb_ug RGB_SPD  &trans             &trans           &rgb_ug RGB_SPI    &trans        &trans       &tog ZOOM
+&bt_clr_td  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &ext_power EP_TOG  &tog WINDOWS    &tog MOUSE       &tog NUMPAD      &kp C_PREV       &kp C_NEXT
+&trans      &kp LG(Q)     &kp LG(W)     &kp K_CMENU   &out OUT_USB  &out OUT_BLE                                         &kp PG_UP          &kp HOME        &kp UP           &kp END          &kp C_PP         &kp LG(LS(N5))
+&trans      &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LCMD      &kp CLCK                                             &kp PG_DN          &kp LEFT        &kp DOWN         &kp RIGHT        &kp LA(DEL)      &mac_sleep
+&boot_td    &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &rgb_ug RGB_HUD  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI    &kp LG(LS(N3))  &kp LG(LS(N4))   &kp LA(BSPC)     &trans           &mac_lock
+                          &trans        &trans        &trans        &rgb_ug RGB_SPD  &trans             &trans           &rgb_ug RGB_SPI    &trans          &trans           &tog ZOOM
             >;
 
             sensor-bindings = <&rgb_brightness>, <&rgb_saturation>;
@@ -556,9 +563,9 @@
             display-name = "NUMPAD";
             bindings = <
 &trans  &trans     &trans     &trans    &trans    &trans                          &trans     &kp FSLH      &kp ASTERISK  &kp MINUS  &trans     &trans
-&trans  &trans     &trans     &trans    &trans    &trans                          &trans     &kp N7        &kp N8        &kp N9     &kp PLUS   &trans
-&trans  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LCMD  &trans                          &trans     &kp N4        &kp N5        &kp N6     &kp EQUAL  &trans
-&trans  &trans     &trans     &trans    &trans    &trans  &trans       &trans     &trans     &kp N1        &kp N2        &kp N3     &kp ENTER  &trans
+&trans  &kp PG_UP  &kp HOME   &kp UP    &kp END   &trans                          &trans     &kp N7        &kp N8        &kp N9     &kp PLUS   &trans
+&trans  &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT &trans                          &trans     &kp N4        &kp N5        &kp N6     &kp EQUAL  &trans
+&trans  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LCMD  &trans  &trans       &trans     &trans     &kp N1        &kp N2        &kp N3     &kp ENTER  &trans
                    &trans     &trans    &trans    &trans  &trans       &kp ENTER  &kp N0     &kp N0        &kp DOT       &tog NUMPAD
             >;
         };
