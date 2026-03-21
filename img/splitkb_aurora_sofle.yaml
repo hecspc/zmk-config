@@ -568,9 +568,15 @@ combos:
 - p: [37, 38]
   k: Gui+Sft+Z
   l: [BASE]
+- p: [15, 16]
+  k: '['
+  l: [BASE]
 - p: [19, 20]
+  k: ']'
+  l: [BASE]
+- p: [18, 19]
   k: Ctl+U
   l: [BASE]
-- p: [45, 46]
+- p: [44, 45]
   k: Ctl+D
   l: [BASE]
