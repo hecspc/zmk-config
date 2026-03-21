@@ -568,3 +568,9 @@ combos:
 - p: [37, 38]
   k: Gui+Sft+Z
   l: [BASE]
+- p: [19, 20]
+  k: Ctl+U
+  l: [BASE]
+- p: [45, 46]
+  k: Ctl+D
+  l: [BASE]
