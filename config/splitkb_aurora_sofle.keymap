@@ -432,16 +432,30 @@
             timeout-ms = <50>;
         };
 
+        combo_lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <15 16>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
+
+        combo_rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <19 20>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
+
         combo_scroll_up {
             bindings = <&kp LC(U)>;
-            key-positions = <19 20>;
+            key-positions = <18 19>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         combo_scroll_down {
             bindings = <&kp LC(D)>;
-            key-positions = <45 46>;
+            key-positions = <44 45>;
             layers = <0>;
             timeout-ms = <50>;
         };

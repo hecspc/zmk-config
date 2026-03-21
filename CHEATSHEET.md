@@ -57,8 +57,10 @@
 | L + ; | Enter | Right homerow adjacent |
 | , + . | Key Repeat | Bottom row adjacent |
 | Z + X | Redo (Cmd+Shift+Z) | Next to undo (hold-Z) |
-| U + I | Ctrl+U (vim scroll up) | "Up" area of keyboard |
-| M + , | Ctrl+D (vim scroll down) | "Down" area of keyboard |
+| E + R | `[` (left bracket) | Left middle+index |
+| U + I | `]` (right bracket) | Right index+middle (mirror of E+R) |
+| Y + U | Ctrl+U (vim scroll up) | Right inner+index (above N+M) |
+| N + M | Ctrl+D (vim scroll down) | Right inner+index (below Y+U) |
 
 ### Encoders
 
