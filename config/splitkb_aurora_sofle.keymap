@@ -489,7 +489,7 @@
                           &trans        &trans        &trans        &trans           &trans             &trans           &trans             &trans          &trans           &tog ZOOM
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(D) LC(U)>, <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_kp LC(D) LC(U)>;
         };
 
         tmux {

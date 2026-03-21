@@ -324,7 +324,7 @@ Thumb:   ---  ---  ---  ---              Enter  0  0  .  tog NUMPAD
 |-------|-------------|---------------|
 | BASE | Volume | Page Up/Down |
 | SYMBOLS | (inherit from BASE) | (inherit from BASE) |
-| ACTIONS | Ctrl+U/Ctrl+D (vim scroll) | Page Up/Down |
+| ACTIONS | Volume | Ctrl+U/Ctrl+D (vim scroll) |
 | ZOOM | Volume | Page Up/Down |
 | MOUSE | Page Up/Down | Page Up/Down |
 | Others | (inherit from below) | (inherit from below) |
