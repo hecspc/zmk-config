@@ -37,6 +37,12 @@
 
 **Tip:** These use `tap-preferred` flavor with 300ms tapping-term. If you're typing fast, the letter always wins. Hold deliberately for the shortcut.
 
+### Mod-morph
+
+| Key | Tap | Shift+Tap |
+|-----|-----|-----------|
+| Backspace | Backspace | Delete |
+
 ### Thumb cluster (left to right)
 
 | Left thumb | | | | | | Right thumb | | | | |
@@ -61,6 +67,7 @@
 | U + I | `]` (right bracket) | Right index+middle (mirror of E+R) |
 | Y + U | Ctrl+U (vim scroll up) | Right inner+index (above N+M) |
 | N + M | Ctrl+D (vim scroll down) | Right inner+index (below Y+U) |
+| W + R | Ctrl+W (vim window prefix) | Left ring+index (skip E) |
 
 ### Encoders
 
@@ -125,6 +132,7 @@ Bottom:  RGB+   Scr3    Scr4   Opt+Bksp  ---          Lock
 | Screenshot options | Cmd+Shift+5 |
 | Opt+Bksp | Delete word left |
 | Opt+Del | Delete word right |
+| Ctrl+^ | Alternate file in vim (Ctrl+6) |
 | Sleep | Lock screen then system sleep |
 | Lock | Lock screen (Ctrl+Cmd+Q) |
 
