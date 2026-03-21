@@ -431,6 +431,20 @@
             layers = <0>;
             timeout-ms = <50>;
         };
+
+        combo_scroll_up {
+            bindings = <&kp LC(U)>;
+            key-positions = <19 20>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
+
+        combo_scroll_down {
+            bindings = <&kp LC(D)>;
+            key-positions = <45 46>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
@@ -475,7 +489,7 @@
                           &trans        &trans        &trans        &trans           &trans             &trans           &trans             &trans          &trans           &tog ZOOM
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp LC(D) LC(U)>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         tmux {

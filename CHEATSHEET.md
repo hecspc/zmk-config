@@ -57,6 +57,8 @@
 | L + ; | Enter | Right homerow adjacent |
 | , + . | Key Repeat | Bottom row adjacent |
 | Z + X | Redo (Cmd+Shift+Z) | Next to undo (hold-Z) |
+| U + I | Ctrl+U (vim scroll up) | "Up" area of keyboard |
+| M + , | Ctrl+D (vim scroll down) | "Down" area of keyboard |
 
 ### Encoders
 
@@ -322,7 +324,7 @@ Thumb:   ---  ---  ---  ---              Enter  0  0  .  tog NUMPAD
 |-------|-------------|---------------|
 | BASE | Volume | Page Up/Down |
 | SYMBOLS | (inherit from BASE) | (inherit from BASE) |
-| ACTIONS | Volume | Page Up/Down |
+| ACTIONS | Ctrl+U/Ctrl+D (vim scroll) | Page Up/Down |
 | ZOOM | Volume | Page Up/Down |
 | MOUSE | Page Up/Down | Page Up/Down |
 | Others | (inherit from below) | (inherit from below) |
