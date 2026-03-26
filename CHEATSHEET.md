@@ -63,7 +63,7 @@
 | L + ; | Enter | Right homerow adjacent |
 | , + . | Key Repeat | Bottom row adjacent |
 | Z + X | Redo (Cmd+Shift+Z) | Next to undo (hold-Z) |
-| E + R | `[` (left bracket) | Left middle+index |
+| D + F | `[` (left bracket) | Left homerow inner (mirror of J+K pattern) |
 | U + I | `]` (right bracket) | Right index+middle (mirror of E+R) |
 | Y + U | Ctrl+U (vim scroll up) | Right inner+index (above N+M) |
 | N + M | Ctrl+D (vim scroll down) | Right inner+index (below Y+U) |
