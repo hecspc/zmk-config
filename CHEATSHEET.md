@@ -63,8 +63,8 @@
 | L + ; | Enter | Right homerow adjacent |
 | , + . | Key Repeat | Bottom row adjacent |
 | Z + X | Redo (Cmd+Shift+Z) | Next to undo (hold-Z) |
-| D + F | `[` (left bracket) | Left homerow inner (mirror of J+K pattern) |
-| U + I | `]` (right bracket) | Right index+middle (mirror of E+R) |
+| S + D | `[` (left bracket) | Left homerow ring+middle (30ms timeout) |
+| L + K | `]` (right bracket) | Right homerow ring+middle — symmetric (30ms timeout) |
 | Y + U | Ctrl+U (vim scroll up) | Right inner+index (above N+M) |
 | N + M | Ctrl+D (vim scroll down) | Right inner+index (below Y+U) |
 | W + R | Ctrl+W (vim window prefix) | Left ring+index (skip E) |
