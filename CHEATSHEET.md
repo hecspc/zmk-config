@@ -106,7 +106,7 @@ Bottom:  ~    +    [    ]    %              @    :    ,    .    '
 
 | Encoder | Action |
 |---------|--------|
-| Left rotate | RGB saturation |
+| Left rotate | Ctrl+D/Ctrl+U (vim scroll) |
 | Right rotate | RGB hue |
 
 ---
@@ -142,7 +142,7 @@ Bottom:  RGB+   Scr3    Scr4   Opt+Bksp  ---          Lock
 Top:     BT_CLR(2x)  BT1  BT2  BT3  BT4  BT5
 Middle:  Quit  Close  Menu  USB  BLE
 Home:    Shift  Ctrl  Alt  Cmd  CapsLock
-Bottom:  Boot(2x)  Undo  Cut  Copy  Paste  RGB-
+Bottom:  Boot(2x)  Undo  Cut  Copy  Paste  HUE-  [TOG]  [EFF]  HUE+
 ```
 
 **Safety:** BT_CLR and Bootloader require **double-tap** to activate (single tap does nothing).
@@ -158,12 +158,16 @@ Bottom:  Boot(2x)  Undo  Cut  Copy  Paste  RGB-
 | C_Prev | Previous track |
 | C_Next | Next track |
 
-### Encoders (ACTIONS layer)
+### RGB controls (ACTIONS layer)
 
-| Encoder | Action |
+| Control | Action |
 |---------|--------|
-| Left rotate | RGB brightness |
-| Right rotate | RGB saturation |
+| Left encoder rotate | RGB brightness up/down |
+| Right encoder rotate | RGB saturation up/down |
+| Left encoder press | RGB toggle on/off |
+| Right encoder press | RGB cycle effect |
+| LB5 / RB0 | Hue down / Hue up |
+| Left thumb outer / Right thumb outer | Speed down / Speed up |
 
 ---
 
@@ -333,13 +337,13 @@ Thumb:   ---  ---  ---  ---              Enter  0  0  .  tog NUMPAD
 | Layer | Left encoder | Right encoder |
 |-------|-------------|---------------|
 | BASE | Volume | Page Up/Down |
-| SYMBOLS | (inherit from BASE) | (inherit from BASE) |
-| ACTIONS | Volume | Ctrl+U/Ctrl+D (vim scroll) |
+| SYMBOLS | Ctrl+D/Ctrl+U (vim scroll) | RGB hue |
+| ACTIONS | RGB brightness | RGB saturation |
 | ZOOM | Volume | Page Up/Down |
 | MOUSE | Page Up/Down | Page Up/Down |
 | Others | (inherit from below) | (inherit from below) |
 
-> **Note:** RGB underglow is disabled for battery savings (~15-29mA saved). To re-enable, uncomment the RGB config in `splitkb_aurora_sofle.conf` and restore the commented-out RGB lines in the keymap.
+> **Note:** RGB underglow auto-turns off when idle to save battery. WS2812 chips draw ~3.6mA quiescent regardless of firmware state. RGB controls are on ACTIONS layer (keys + encoders) and SYMBOLS encoders.
 
 ## Safety features
 
