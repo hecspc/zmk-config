@@ -22,6 +22,6 @@ manifest:
       revision: 46f824abb2bd41f1287c5c68abd14122af6042a3
     - name: nice-view-gem
       remote: hecspc
-      revision: 3267e36dd72f88c1e87e282be01effd28ab2fe2a
+      revision: 5ab24b6da2be37adcdcecb93223f8711b730143d
   self:
     path: config
