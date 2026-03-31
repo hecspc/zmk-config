@@ -7,6 +7,8 @@ manifest:
       url-base: https://github.com/mctechnology17
     - name: m165437
       url-base: https://github.com/M165437
+    - name: hecspc
+      url-base: https://github.com/hecspc
   # Additional modules containing boards/shields/custom code can be listed here as well
   # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -19,7 +21,7 @@ manifest:
       remote: mctechnology17
       revision: 46f824abb2bd41f1287c5c68abd14122af6042a3
     - name: nice-view-gem
-      remote: m165437
-      revision: 0a50fe209d929c916c5664c6affd0f4977c6b012
+      remote: hecspc
+      revision: 3267e36dd72f88c1e87e282be01effd28ab2fe2a
   self:
     path: config
