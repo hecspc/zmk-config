@@ -47,7 +47,7 @@
 
 | Left thumb | | | | | | Right thumb | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Hyper+E | WINDOWS | TMUX/Ctrl+A | Backspace | ACTIONS/Space | | SYMBOLS/Enter | Tab | Up | Cmd+Alt+I | Zoom toggle |
+| Meh+E | WINDOWS | TMUX/Ctrl+A | Backspace | ACTIONS/Space | | SYMBOLS/Enter | Tab | Up | Cmd+Alt+I | Zoom toggle |
 
 - **TMUX key**: hold for TMUX layer, tap to send the tmux prefix (Ctrl+A)
 - **ACTIONS/Space**: hold for ACTIONS layer, tap for Space
@@ -226,12 +226,13 @@ Thumb:                                     ---  ---  last_win  last_sess
 
 ```
          Left                    Right
-Top:     ---  ---  ---  ---      F10  F11  F12
+Number:  ---  ---  ---  ---      F10  F11  F12
+Top:     ---  ---  ---  ---      F7   F8   F9
 Home:    Shift  Ctrl  Alt  Cmd   F4   F5   F6
 Bottom:  ---  ---  ---  ---      F1   F2   F3
 ```
 
-**Tip:** F-keys are in numpad-style layout (1-3 bottom, 4-6 middle, 7-9 top, 10-12 on the top row). Left side has mods for combos like Shift+F5.
+**Tip:** F-keys are in numpad-style layout (1-3 bottom, 4-6 middle, 7-9 top, 10-12 on the number row). Left side has mods for combos like Shift+F5.
 
 ---
 
