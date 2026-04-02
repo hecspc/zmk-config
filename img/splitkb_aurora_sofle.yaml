@@ -572,7 +572,7 @@ combos:
   k: '['
   l: [BASE]
 - p: [33, 32]
-  k: ']'
+  k: A
   l: [BASE]
 - p: [14, 16]
   k: ⌃W
