@@ -434,7 +434,7 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <32 33>;
+            key-positions = <20 21>;
             layers = <0>;
             timeout-ms = <50>;
         };
@@ -468,10 +468,10 @@
         };
 
         combo_rbkt {
-            bindings = <&kp A>;
+            bindings = <&kp RBKT>;
             key-positions = <33 32>;
             layers = <0>;
-            timeout-ms = <100>;
+            timeout-ms = <50>;
         };
 
         combo_ctrl_w {

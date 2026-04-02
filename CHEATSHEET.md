@@ -59,12 +59,12 @@
 |------|--------|----------|
 | F + J | Caps Word | Inner index fingers |
 | J + K | Escape | Right homerow adjacent |
-| K + L | Tab | Right homerow adjacent |
+| I + O | Tab | Right top row adjacent |
 | L + ; | Enter | Right homerow adjacent |
 | , + . | Key Repeat | Bottom row adjacent |
 | Z + X | Redo (Cmd+Shift+Z) | Next to undo (hold-Z) |
 | S + D | `[` (left bracket) | Left homerow ring+middle (30ms timeout) |
-| L + K | `]` (right bracket) | Right homerow ring+middle — symmetric (30ms timeout) |
+| K + L | `]` (right bracket) | Right homerow ring+middle — symmetric with S+D |
 | Y + U | Ctrl+U (vim scroll up) | Right inner+index (above N+M) |
 | N + M | Ctrl+D (vim scroll down) | Right inner+index (below Y+U) |
 | W + R | Ctrl+W (vim window prefix) | Left ring+index (skip E) |
