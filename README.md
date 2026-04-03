@@ -15,3 +15,4 @@ Created with [Keymap Drawer](https://keymap-drawer.streamlit.app/?zmk_url=https%
 - [ZMK Docs](https://zmk.dev/docs)
 - [Designing a Symbol Layer](https://getreuer.info/posts/keyboards/symbol-layer/index.html)
 - [A guide to home row mods](https://precondition.github.io/home-row-mods#shift-thumb-keys)
+- And a little help of my friends
